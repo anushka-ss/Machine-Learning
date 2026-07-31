@@ -6,14 +6,15 @@ A collection of Machine Learning projects built while exploring fundamental ML a
 
 # 📖 About This Repository
 
-This repository documents my Machine Learning journey through hands-on implementation of algorithms and preprocessing techniques.
+This repository documents my Machine Learning journey through hands-on implementation of Machine Learning algorithms and preprocessing techniques.
 
 Each project focuses on understanding the complete Machine Learning workflow, including:
 
 - 📥 Data Loading
 - 🧹 Data Preprocessing
+- 🏷️ Categorical Data Encoding
 - ⚖️ Feature Scaling
-- 🏷️ Feature Engineering
+- 🏗️ Feature Engineering
 - 🤖 Model Training
 - 📊 Model Evaluation
 - 📈 Data Visualization
@@ -49,6 +50,8 @@ Machine-Learning
 │
 ├── Feature-Scaling-MinMaxScaler
 │
+├── Label-Encoding
+│
 └── README.md
 ```
 
@@ -62,7 +65,8 @@ Machine-Learning
 | 📊 Polynomial Regression | Models non-linear relationships using polynomial features. |
 | 📉 Multiple Linear Regression | Predicts a target variable using multiple independent variables. |
 | ⚖️ Feature Scaling (StandardScaler) | Standardizes numerical features so that they have a mean of 0 and a standard deviation of 1. |
-| 📏 Feature Scaling (MinMaxScaler) | Scales numerical features to a fixed range, typically between 0 and 1. |
+| 📏 Feature Scaling (MinMaxScaler) | Normalizes numerical features into a fixed range, usually between 0 and 1. |
+| 🏷️ Label Encoding | Converts categorical labels into numerical values using Scikit-learn's LabelEncoder. |
 
 ---
 
@@ -70,13 +74,13 @@ Machine-Learning
 
 Each project includes:
 
-- 📄 Dataset
+- 📄 Dataset (if applicable)
 - 📓 Jupyter Notebook
 - 📘 Project Documentation (README)
 - 📊 Data Visualization
 - 🤖 Machine Learning Implementation
-- ⚖️ Data Preprocessing (where applicable)
-- 📈 Model Evaluation
+- ⚙️ Data Preprocessing
+- 📈 Model Evaluation (where applicable)
 
 ---
 
@@ -86,6 +90,7 @@ This repository emphasizes learning through implementation by practicing:
 
 - Data Preprocessing
 - Feature Scaling
+- Label Encoding
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
 - Feature Selection
@@ -106,6 +111,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Completed | Multiple Linear Regression |
 | ✅ Completed | Feature Scaling (StandardScaler) |
 | ✅ Completed | Feature Scaling (MinMaxScaler) |
+| ✅ Completed | Label Encoding |
 
 ---
 
@@ -130,8 +136,9 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Day 3 | Multiple Linear Regression | Completed |
 | ✅ Day 4 | Feature Scaling (StandardScaler) | Completed |
 | ✅ Day 5 | Feature Scaling (MinMaxScaler) | Completed |
+| ✅ Day 6 | Label Encoding | Completed |
 
-🚀 More projects will be added as I continue learning Machine Learning.
+🚀 More Machine Learning projects will be added as I continue learning and implementing new concepts.
 
 ---
 
@@ -139,9 +146,9 @@ This repository emphasizes learning through implementation by practicing:
 
 The following topics are planned for future implementation:
 
-- 🔜 Label Encoding
 - 🔜 One-Hot Encoding
 - 🔜 Ordinal Encoding
+- 🔜 Column Transformer
 - 🔜 Train-Test Split
 - 🔜 Missing Value Handling
 - 🔜 Feature Selection
@@ -153,23 +160,24 @@ The following topics are planned for future implementation:
 - 🔜 Naive Bayes
 - 🔜 K-Means Clustering
 - 🔜 Principal Component Analysis (PCA)
-- 🔜 Model Evaluation Metrics
+- 🔜 Cross Validation
 - 🔜 Hyperparameter Tuning
+- 🔜 Model Evaluation Metrics
 
 ---
 
 # ⭐ Why This Repository?
 
-This repository reflects my learning journey as I build Machine Learning projects step by step. Each project helps me understand both the theoretical concepts and their practical implementation using Python and Scikit-learn.
+This repository represents my Machine Learning learning journey through practical implementation.
 
-The repository is continuously updated with new projects as I learn more advanced Machine Learning techniques.
+Every project is created to understand the theory behind Machine Learning concepts and apply them using Python and Scikit-learn. As I continue learning, this repository will grow with more preprocessing techniques, algorithms, and real-world projects.
 
 ---
 
 # 📬 Connect
 
-Thank you for visiting this repository.
+Thank you for visiting my Machine Learning repository.
 
-If you find these projects helpful or interesting, feel free to ⭐ **Star** this repository.
+If you find these projects useful or interesting, feel free to ⭐ **Star** this repository.
 
-Happy Coding! 🚀
+Happy Learning! 🚀
