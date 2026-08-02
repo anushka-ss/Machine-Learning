@@ -52,6 +52,8 @@ Machine-Learning
 │
 ├── Label-Encoding
 │
+├── OneHot-Encoding
+│
 └── README.md
 ```
 
@@ -64,9 +66,10 @@ Machine-Learning
 | 📈 Linear Regression | Predicts continuous values using a simple linear relationship between variables. |
 | 📊 Polynomial Regression | Models non-linear relationships using polynomial features. |
 | 📉 Multiple Linear Regression | Predicts a target variable using multiple independent variables. |
-| ⚖️ Feature Scaling (StandardScaler) | Standardizes numerical features so that they have a mean of 0 and a standard deviation of 1. |
-| 📏 Feature Scaling (MinMaxScaler) | Normalizes numerical features into a fixed range, usually between 0 and 1. |
+| ⚖️ Feature Scaling (StandardScaler) | Standardizes numerical features to have a mean of 0 and a standard deviation of 1. |
+| 📏 Feature Scaling (MinMaxScaler) | Normalizes numerical features into a fixed range (typically between 0 and 1). |
 | 🏷️ Label Encoding | Converts categorical labels into numerical values using Scikit-learn's LabelEncoder. |
+| 🔢 One-Hot Encoding | Converts categorical variables into binary columns using Scikit-learn's OneHotEncoder. |
 
 ---
 
@@ -91,6 +94,7 @@ This repository emphasizes learning through implementation by practicing:
 - Data Preprocessing
 - Feature Scaling
 - Label Encoding
+- One-Hot Encoding
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
 - Feature Selection
@@ -112,6 +116,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Completed | Feature Scaling (StandardScaler) |
 | ✅ Completed | Feature Scaling (MinMaxScaler) |
 | ✅ Completed | Label Encoding |
+| ✅ Completed | One-Hot Encoding |
 
 ---
 
@@ -137,6 +142,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Day 4 | Feature Scaling (StandardScaler) | Completed |
 | ✅ Day 5 | Feature Scaling (MinMaxScaler) | Completed |
 | ✅ Day 6 | Label Encoding | Completed |
+| ✅ Day 7 | One-Hot Encoding | Completed |
 
 🚀 More Machine Learning projects will be added as I continue learning and implementing new concepts.
 
@@ -146,7 +152,6 @@ This repository emphasizes learning through implementation by practicing:
 
 The following topics are planned for future implementation:
 
-- 🔜 One-Hot Encoding
 - 🔜 Ordinal Encoding
 - 🔜 Column Transformer
 - 🔜 Train-Test Split
@@ -170,7 +175,7 @@ The following topics are planned for future implementation:
 
 This repository represents my Machine Learning learning journey through practical implementation.
 
-Every project is created to understand the theory behind Machine Learning concepts and apply them using Python and Scikit-learn. As I continue learning, this repository will grow with more preprocessing techniques, algorithms, and real-world projects.
+Each project is designed to help me understand both the theoretical concepts and their practical implementation using Python and Scikit-learn. As I continue learning, this repository will grow with more preprocessing techniques, machine learning algorithms, and real-world projects.
 
 ---
 
