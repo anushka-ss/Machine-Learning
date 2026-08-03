@@ -31,6 +31,7 @@ The goal of this repository is to strengthen my Machine Learning fundamentals wh
 - Pandas
 - Matplotlib
 - Scikit-learn
+- category_encoders
 - Jupyter Notebook
 
 ---
@@ -56,6 +57,8 @@ Machine-Learning
 │
 ├── Ordinal-Encoding
 │
+├── Target-Encoding
+│
 └── README.md
 ```
 
@@ -73,6 +76,7 @@ Machine-Learning
 | 🏷️ Label Encoding | Converts categorical labels into numerical values using Scikit-learn's LabelEncoder. |
 | 🔢 One-Hot Encoding | Converts categorical variables into binary columns using Scikit-learn's OneHotEncoder. |
 | 🔠 Ordinal Encoding | Converts ordered categorical variables into numerical values while preserving their natural order using Scikit-learn's OrdinalEncoder. |
+| 🎯 Target Encoding | Encodes categorical variables using statistics (such as the mean) of the target variable with the `category_encoders` library. |
 
 ---
 
@@ -99,6 +103,7 @@ This repository emphasizes learning through implementation by practicing:
 - Label Encoding
 - One-Hot Encoding
 - Ordinal Encoding
+- Target Encoding
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
 - Feature Selection
@@ -122,6 +127,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Completed | Label Encoding |
 | ✅ Completed | One-Hot Encoding |
 | ✅ Completed | Ordinal Encoding |
+| ✅ Completed | Target Encoding |
 
 ---
 
@@ -149,6 +155,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Day 6 | Label Encoding | Completed |
 | ✅ Day 7 | One-Hot Encoding | Completed |
 | ✅ Day 8 | Ordinal Encoding | Completed |
+| ✅ Day 9 | Target Encoding | Completed |
 
 🚀 More Machine Learning projects will be added as I continue learning and implementing new concepts.
 
@@ -181,7 +188,7 @@ The following topics are planned for future implementation:
 
 This repository represents my Machine Learning learning journey through practical implementation.
 
-Every project is created to understand both the theoretical concepts and their practical implementation using Python and Scikit-learn. As I continue learning, this repository will grow with more preprocessing techniques, Machine Learning algorithms, and real-world projects.
+Each project is designed to strengthen my understanding of Machine Learning concepts by combining theoretical knowledge with hands-on coding using Python and Scikit-learn. As I continue learning, this repository will expand with more preprocessing techniques, machine learning algorithms, model evaluation methods, and real-world projects.
 
 ---
 
