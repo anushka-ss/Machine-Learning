@@ -54,6 +54,8 @@ Machine-Learning
 │
 ├── OneHot-Encoding
 │
+├── Ordinal-Encoding
+│
 └── README.md
 ```
 
@@ -70,6 +72,7 @@ Machine-Learning
 | 📏 Feature Scaling (MinMaxScaler) | Normalizes numerical features into a fixed range (typically between 0 and 1). |
 | 🏷️ Label Encoding | Converts categorical labels into numerical values using Scikit-learn's LabelEncoder. |
 | 🔢 One-Hot Encoding | Converts categorical variables into binary columns using Scikit-learn's OneHotEncoder. |
+| 🔠 Ordinal Encoding | Converts ordered categorical variables into numerical values while preserving their natural order using Scikit-learn's OrdinalEncoder. |
 
 ---
 
@@ -95,6 +98,7 @@ This repository emphasizes learning through implementation by practicing:
 - Feature Scaling
 - Label Encoding
 - One-Hot Encoding
+- Ordinal Encoding
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
 - Feature Selection
@@ -117,6 +121,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Completed | Feature Scaling (MinMaxScaler) |
 | ✅ Completed | Label Encoding |
 | ✅ Completed | One-Hot Encoding |
+| ✅ Completed | Ordinal Encoding |
 
 ---
 
@@ -143,6 +148,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Day 5 | Feature Scaling (MinMaxScaler) | Completed |
 | ✅ Day 6 | Label Encoding | Completed |
 | ✅ Day 7 | One-Hot Encoding | Completed |
+| ✅ Day 8 | Ordinal Encoding | Completed |
 
 🚀 More Machine Learning projects will be added as I continue learning and implementing new concepts.
 
@@ -152,10 +158,10 @@ This repository emphasizes learning through implementation by practicing:
 
 The following topics are planned for future implementation:
 
-- 🔜 Ordinal Encoding
 - 🔜 Column Transformer
 - 🔜 Train-Test Split
 - 🔜 Missing Value Handling
+- 🔜 Simple Imputer
 - 🔜 Feature Selection
 - 🔜 Logistic Regression
 - 🔜 Decision Tree
@@ -175,7 +181,7 @@ The following topics are planned for future implementation:
 
 This repository represents my Machine Learning learning journey through practical implementation.
 
-Each project is designed to help me understand both the theoretical concepts and their practical implementation using Python and Scikit-learn. As I continue learning, this repository will grow with more preprocessing techniques, machine learning algorithms, and real-world projects.
+Every project is created to understand both the theoretical concepts and their practical implementation using Python and Scikit-learn. As I continue learning, this repository will grow with more preprocessing techniques, Machine Learning algorithms, and real-world projects.
 
 ---
 
