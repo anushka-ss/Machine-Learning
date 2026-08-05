@@ -14,6 +14,7 @@ Each project focuses on understanding the complete Machine Learning workflow, in
 - 🧹 Data Preprocessing
 - 🏷️ Categorical Data Encoding
 - ⚖️ Feature Scaling
+- 🔄 Column-wise Data Transformation
 - 🏗️ Feature Engineering
 - 🤖 Model Training
 - 📊 Model Evaluation
@@ -59,6 +60,8 @@ Machine-Learning
 │
 ├── Target-Encoding
 │
+├── Column-Transformer
+│
 └── README.md
 ```
 
@@ -76,7 +79,8 @@ Machine-Learning
 | 🏷️ Label Encoding | Converts categorical labels into numerical values using Scikit-learn's LabelEncoder. |
 | 🔢 One-Hot Encoding | Converts categorical variables into binary columns using Scikit-learn's OneHotEncoder. |
 | 🔠 Ordinal Encoding | Converts ordered categorical variables into numerical values while preserving their natural order using Scikit-learn's OrdinalEncoder. |
-| 🎯 Target Encoding | Encodes categorical variables using statistics (such as the mean) of the target variable with the `category_encoders` library. |
+| 🎯 Target Encoding | Encodes categorical variables using target statistics (such as the mean of the target variable). |
+| 🔄 Column Transformer | Applies different preprocessing techniques to different columns using Scikit-learn's `ColumnTransformer`. |
 
 ---
 
@@ -88,8 +92,8 @@ Each project includes:
 - 📓 Jupyter Notebook
 - 📘 Project Documentation (README)
 - 📊 Data Visualization
-- 🤖 Machine Learning Implementation
 - ⚙️ Data Preprocessing
+- 🤖 Machine Learning Implementation
 - 📈 Model Evaluation (where applicable)
 
 ---
@@ -104,6 +108,7 @@ This repository emphasizes learning through implementation by practicing:
 - One-Hot Encoding
 - Ordinal Encoding
 - Target Encoding
+- Column Transformer
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
 - Feature Selection
@@ -128,6 +133,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Completed | One-Hot Encoding |
 | ✅ Completed | Ordinal Encoding |
 | ✅ Completed | Target Encoding |
+| ✅ Completed | Column Transformer |
 
 ---
 
@@ -136,6 +142,7 @@ This repository emphasizes learning through implementation by practicing:
 - Build a strong foundation in Machine Learning
 - Understand Machine Learning algorithms through implementation
 - Learn real-world data preprocessing techniques
+- Learn feature engineering and preprocessing pipelines
 - Improve Python programming skills
 - Maintain clean and organized project documentation
 - Continuously improve analytical and problem-solving skills
@@ -156,6 +163,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Day 7 | One-Hot Encoding | Completed |
 | ✅ Day 8 | Ordinal Encoding | Completed |
 | ✅ Day 9 | Target Encoding | Completed |
+| ✅ Day 10 | Column Transformer | Completed |
 
 🚀 More Machine Learning projects will be added as I continue learning and implementing new concepts.
 
@@ -165,11 +173,11 @@ This repository emphasizes learning through implementation by practicing:
 
 The following topics are planned for future implementation:
 
-- 🔜 Column Transformer
 - 🔜 Train-Test Split
 - 🔜 Missing Value Handling
 - 🔜 Simple Imputer
 - 🔜 Feature Selection
+- 🔜 Linear Regression Pipeline
 - 🔜 Logistic Regression
 - 🔜 Decision Tree
 - 🔜 Random Forest
@@ -188,7 +196,7 @@ The following topics are planned for future implementation:
 
 This repository represents my Machine Learning learning journey through practical implementation.
 
-Each project is designed to strengthen my understanding of Machine Learning concepts by combining theoretical knowledge with hands-on coding using Python and Scikit-learn. As I continue learning, this repository will expand with more preprocessing techniques, machine learning algorithms, model evaluation methods, and real-world projects.
+Each project is designed to strengthen my understanding of Machine Learning concepts by combining theory with hands-on implementation using Python and Scikit-learn. As I continue learning, this repository will expand with more preprocessing techniques, machine learning algorithms, evaluation methods, and real-world projects.
 
 ---
 
