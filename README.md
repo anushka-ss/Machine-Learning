@@ -15,13 +15,14 @@ Each project focuses on understanding the complete Machine Learning workflow, in
 - 🏷️ Categorical Data Encoding
 - ⚖️ Feature Scaling
 - 🔄 Column-wise Data Transformation
+- 🔗 Machine Learning Pipelines
 - 🏗️ Feature Engineering
 - 🤖 Model Training
 - 📊 Model Evaluation
 - 📈 Data Visualization
 - 📉 Performance Analysis
 
-The goal of this repository is to strengthen my Machine Learning fundamentals while building a professional portfolio of practical projects.
+The goal of this repository is to strengthen my Machine Learning fundamentals through practical implementation and build a professional Machine Learning portfolio.
 
 ---
 
@@ -43,16 +44,29 @@ The goal of this repository is to strengthen my Machine Learning fundamentals wh
 Machine-Learning
 │
 ├── Linear-Regression
+│
 ├── Polynomial-Regression
+│
 ├── Multiple-Linear-Regression
+│
 ├── Feature-Scaling-StandardScaler
+│
 ├── Feature-Scaling-MinMaxScaler
+│
 ├── Label-Encoding
+│
 ├── OneHot-Encoding
+│
 ├── Ordinal-Encoding
+│
 ├── Target-Encoding
+│
 ├── Column-Transformer
+│
 ├── Column-Transformer-Multiple-Transformers
+│
+├── Pipeline-ColumnTransformer-LogisticRegression
+│
 └── README.md
 ```
 
@@ -66,13 +80,14 @@ Machine-Learning
 | 📊 Polynomial Regression | Models non-linear relationships using polynomial features. |
 | 📉 Multiple Linear Regression | Predicts a target variable using multiple independent variables. |
 | ⚖️ Feature Scaling (StandardScaler) | Standardizes numerical features to have a mean of 0 and a standard deviation of 1. |
-| 📏 Feature Scaling (MinMaxScaler) | Normalizes numerical features into a fixed range (typically between 0 and 1). |
+| 📏 Feature Scaling (MinMaxScaler) | Normalizes numerical features into a fixed range, typically between 0 and 1. |
 | 🏷️ Label Encoding | Converts categorical labels into numerical values using Scikit-learn's `LabelEncoder`. |
 | 🔢 One-Hot Encoding | Converts categorical variables into binary columns using Scikit-learn's `OneHotEncoder`. |
 | 🔠 Ordinal Encoding | Converts ordered categorical variables into numerical values while preserving their natural order using Scikit-learn's `OrdinalEncoder`. |
-| 🎯 Target Encoding | Encodes categorical variables using target statistics (such as the mean of the target variable). |
+| 🎯 Target Encoding | Encodes categorical variables using statistics such as the mean of the target variable. |
 | 🔄 Column Transformer | Applies different preprocessing techniques to different columns using Scikit-learn's `ColumnTransformer`. |
-| ⚙️ Column Transformer (Multiple Transformers) | Demonstrates applying multiple preprocessing techniques (such as MinMaxScaler, TargetEncoder, and OrdinalEncoder) to different columns within a single `ColumnTransformer`. |
+| ⚙️ Column Transformer (Multiple Transformers) | Demonstrates applying multiple preprocessing techniques such as MinMaxScaler, TargetEncoder, and OrdinalEncoder to different columns using a single `ColumnTransformer`. |
+| 🔗 Pipeline with ColumnTransformer & Logistic Regression | Combines multiple preprocessing techniques using `ColumnTransformer` and connects them with a Logistic Regression model using a Scikit-learn `Pipeline`. |
 
 ---
 
@@ -82,11 +97,13 @@ Each project includes:
 
 - 📄 Dataset (if applicable)
 - 📓 Jupyter Notebook
-- 📘 Project Documentation (README)
+- 📘 Project Documentation
 - 📊 Data Visualization
 - ⚙️ Data Preprocessing
+- 🔄 Feature Transformation
 - 🤖 Machine Learning Implementation
-- 📈 Model Evaluation (where applicable)
+- 📈 Model Evaluation
+- 🎯 Predictions
 
 ---
 
@@ -102,6 +119,9 @@ This repository emphasizes learning through implementation by practicing:
 - Target Encoding
 - Column Transformer
 - Multiple Column Transformations
+- Machine Learning Pipelines
+- Train-Test Split
+- Logistic Regression
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
 - Feature Selection
@@ -128,6 +148,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Completed | Target Encoding |
 | ✅ Completed | Column Transformer |
 | ✅ Completed | Column Transformer (Multiple Transformers) |
+| ✅ Completed | Pipeline with ColumnTransformer & Logistic Regression |
 
 ---
 
@@ -136,10 +157,12 @@ This repository emphasizes learning through implementation by practicing:
 - Build a strong foundation in Machine Learning
 - Understand Machine Learning algorithms through implementation
 - Learn real-world data preprocessing techniques
-- Learn feature engineering and preprocessing pipelines
+- Understand categorical and numerical feature transformations
+- Learn how to combine multiple preprocessing techniques
+- Understand Machine Learning pipelines
 - Improve Python programming skills
+- Improve analytical and problem-solving skills
 - Maintain clean and organized project documentation
-- Continuously improve analytical and problem-solving skills
 - Build a professional Machine Learning portfolio
 
 ---
@@ -159,6 +182,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Day 9 | Target Encoding | Completed |
 | ✅ Day 10 | Column Transformer | Completed |
 | ✅ Day 11 | Column Transformer (Multiple Transformers) | Completed |
+| ✅ Day 12 | Pipeline with ColumnTransformer & Logistic Regression | Completed |
 
 🚀 More Machine Learning projects will be added as I continue learning and implementing new concepts.
 
@@ -168,23 +192,21 @@ This repository emphasizes learning through implementation by practicing:
 
 The following topics are planned for future implementation:
 
-- 🔜 Train-Test Split
 - 🔜 Missing Value Handling
 - 🔜 Simple Imputer
-- 🔜 Pipeline
-- 🔜 Feature Selection
-- 🔜 Linear Regression Pipeline
-- 🔜 Logistic Regression
+- 🔜 Advanced Pipelines
+- 🔜 Logistic Regression Projects
 - 🔜 Decision Tree
 - 🔜 Random Forest
-- 🔜 Support Vector Machine (SVM)
 - 🔜 K-Nearest Neighbors (KNN)
+- 🔜 Support Vector Machine (SVM)
 - 🔜 Naive Bayes
 - 🔜 K-Means Clustering
 - 🔜 Principal Component Analysis (PCA)
 - 🔜 Cross Validation
 - 🔜 Hyperparameter Tuning
 - 🔜 Model Evaluation Metrics
+- 🔜 Real-World Machine Learning Projects
 
 ---
 
@@ -192,7 +214,9 @@ The following topics are planned for future implementation:
 
 This repository represents my Machine Learning learning journey through practical implementation.
 
-Each project is designed to strengthen my understanding of Machine Learning concepts by combining theory with hands-on implementation using Python and Scikit-learn. As I continue learning, this repository will expand with more preprocessing techniques, machine learning algorithms, evaluation methods, and real-world projects.
+Each project is designed to strengthen my understanding of Machine Learning concepts by combining theoretical knowledge with hands-on implementation using Python and Scikit-learn.
+
+As I continue learning, this repository will expand with more preprocessing techniques, Machine Learning algorithms, pipelines, evaluation methods, and real-world projects.
 
 ---
 
