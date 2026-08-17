@@ -15,6 +15,7 @@ Each project focuses on understanding the complete Machine Learning workflow, in
 - 🏷️ Categorical Data Encoding
 - ⚖️ Feature Scaling
 - 🔄 Column-wise Data Transformation
+- 🧩 Missing Value Handling
 - 🔗 Machine Learning Pipelines
 - 🏗️ Feature Engineering
 - 🤖 Model Training
@@ -67,6 +68,8 @@ Machine-Learning
 │
 ├── Pipeline-ColumnTransformer-LogisticRegression
 │
+├── Missing-Value-Imputation-SimpleImputer
+│
 └── README.md
 ```
 
@@ -84,10 +87,11 @@ Machine-Learning
 | 🏷️ Label Encoding | Converts categorical labels into numerical values using Scikit-learn's `LabelEncoder`. |
 | 🔢 One-Hot Encoding | Converts categorical variables into binary columns using Scikit-learn's `OneHotEncoder`. |
 | 🔠 Ordinal Encoding | Converts ordered categorical variables into numerical values while preserving their natural order using Scikit-learn's `OrdinalEncoder`. |
-| 🎯 Target Encoding | Encodes categorical variables using statistics such as the mean of the target variable. |
+| 🎯 Target Encoding | Encodes categorical variables using target statistics such as the mean of the target variable. |
 | 🔄 Column Transformer | Applies different preprocessing techniques to different columns using Scikit-learn's `ColumnTransformer`. |
 | ⚙️ Column Transformer (Multiple Transformers) | Demonstrates applying multiple preprocessing techniques such as MinMaxScaler, TargetEncoder, and OrdinalEncoder to different columns using a single `ColumnTransformer`. |
 | 🔗 Pipeline with ColumnTransformer & Logistic Regression | Combines multiple preprocessing techniques using `ColumnTransformer` and connects them with a Logistic Regression model using a Scikit-learn `Pipeline`. |
+| 🧹 Missing Value Imputation — SimpleImputer | Demonstrates handling missing values using Scikit-learn's `SimpleImputer` with strategies such as mean, median, constant, and most frequent. |
 
 ---
 
@@ -95,13 +99,13 @@ Machine-Learning
 
 Each project includes:
 
-- 📄 Dataset (if applicable)
+- 📄 Dataset or sample data (if applicable)
 - 📓 Jupyter Notebook
 - 📘 Project Documentation
-- 📊 Data Visualization
-- ⚙️ Data Preprocessing
-- 🔄 Feature Transformation
+- 🧹 Data Preprocessing
+- ⚙️ Feature Transformation
 - 🤖 Machine Learning Implementation
+- 📊 Data Visualization
 - 📈 Model Evaluation
 - 🎯 Predictions
 
@@ -112,6 +116,8 @@ Each project includes:
 This repository emphasizes learning through implementation by practicing:
 
 - Data Preprocessing
+- Missing Value Handling
+- SimpleImputer
 - Feature Scaling
 - Label Encoding
 - One-Hot Encoding
@@ -149,6 +155,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Completed | Column Transformer |
 | ✅ Completed | Column Transformer (Multiple Transformers) |
 | ✅ Completed | Pipeline with ColumnTransformer & Logistic Regression |
+| ✅ Completed | Missing Value Imputation — SimpleImputer |
 
 ---
 
@@ -158,8 +165,9 @@ This repository emphasizes learning through implementation by practicing:
 - Understand Machine Learning algorithms through implementation
 - Learn real-world data preprocessing techniques
 - Understand categorical and numerical feature transformations
-- Learn how to combine multiple preprocessing techniques
+- Learn how to handle missing values
 - Understand Machine Learning pipelines
+- Learn how different preprocessing techniques work together
 - Improve Python programming skills
 - Improve analytical and problem-solving skills
 - Maintain clean and organized project documentation
@@ -183,6 +191,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Day 10 | Column Transformer | Completed |
 | ✅ Day 11 | Column Transformer (Multiple Transformers) | Completed |
 | ✅ Day 12 | Pipeline with ColumnTransformer & Logistic Regression | Completed |
+| ⭐ Day 13 | Missing Value Imputation — SimpleImputer | **Completed** |
 
 🚀 More Machine Learning projects will be added as I continue learning and implementing new concepts.
 
@@ -192,9 +201,9 @@ This repository emphasizes learning through implementation by practicing:
 
 The following topics are planned for future implementation:
 
-- 🔜 Missing Value Handling
-- 🔜 Simple Imputer
-- 🔜 Advanced Pipelines
+- 🔜 Advanced Missing Value Imputation
+- 🔜 Simple Imputer with ColumnTransformer
+- 🔜 Advanced Machine Learning Pipelines
 - 🔜 Logistic Regression Projects
 - 🔜 Decision Tree
 - 🔜 Random Forest
@@ -207,6 +216,30 @@ The following topics are planned for future implementation:
 - 🔜 Hyperparameter Tuning
 - 🔜 Model Evaluation Metrics
 - 🔜 Real-World Machine Learning Projects
+
+---
+
+# 🧠 Key Learning Progress
+
+My Machine Learning journey has progressed from fundamental regression algorithms to practical data preprocessing and pipeline construction.
+
+```text
+Regression
+    ↓
+Feature Scaling
+    ↓
+Categorical Encoding
+    ↓
+ColumnTransformer
+    ↓
+Multiple Transformers
+    ↓
+Machine Learning Pipeline
+    ↓
+Missing Value Imputation
+    ↓
+Advanced Machine Learning Concepts
+```
 
 ---
 
