@@ -1,6 +1,6 @@
 # 🤖 Machine Learning
 
-A collection of Machine Learning projects built while exploring fundamental ML algorithms, data preprocessing techniques, feature engineering, and core Machine Learning concepts.
+A collection of Machine Learning projects built while exploring fundamental ML algorithms, data preprocessing techniques, feature engineering, classification, and core Machine Learning concepts.
 
 ---
 
@@ -14,13 +14,14 @@ Each project focuses on understanding the complete Machine Learning workflow, in
 - 🧹 Data Cleaning & Preprocessing
 - 🏷️ Categorical Data Encoding
 - ⚖️ Feature Scaling
-- 🔄 Column-wise Data Transformation
 - 🧩 Missing Value Handling
+- 🔄 Column-wise Data Transformation
 - 🔗 Machine Learning Pipelines
 - 🏗️ Feature Engineering
 - 🤖 Model Training
 - 📊 Model Evaluation
 - 📈 Data Visualization
+- 🎯 Classification
 - 📉 Performance Analysis
 
 The goal of this repository is to strengthen my Machine Learning fundamentals through practical implementation and build a professional Machine Learning portfolio.
@@ -33,6 +34,7 @@ The goal of this repository is to strengthen my Machine Learning fundamentals th
 - NumPy
 - Pandas
 - Matplotlib
+- Seaborn
 - Scikit-learn
 - category_encoders
 - Jupyter Notebook
@@ -70,6 +72,11 @@ Machine-Learning
 │
 ├── Missing-Value-Imputation-SimpleImputer
 │
+├── Logistic-Regression-Loan-Approval
+│   ├── Logistic-Regression-Loan-Approval.ipynb
+│   ├── loan_approval_dataset.csv
+│   └── README.md
+│
 └── README.md
 ```
 
@@ -92,6 +99,7 @@ Machine-Learning
 | ⚙️ Column Transformer (Multiple Transformers) | Demonstrates applying multiple preprocessing techniques such as MinMaxScaler, TargetEncoder, and OrdinalEncoder to different columns using a single `ColumnTransformer`. |
 | 🔗 Pipeline with ColumnTransformer & Logistic Regression | Combines multiple preprocessing techniques using `ColumnTransformer` and connects them with a Logistic Regression model using a Scikit-learn `Pipeline`. |
 | 🧹 Missing Value Imputation — SimpleImputer | Demonstrates handling missing values using Scikit-learn's `SimpleImputer` with strategies such as mean, median, constant, and most frequent. |
+| 🤖 Logistic Regression — Loan Approval | Implements Logistic Regression for loan approval classification using MinMaxScaler, OneHotEncoder, ColumnTransformer, Pipeline, and classification evaluation metrics. |
 
 ---
 
@@ -104,6 +112,7 @@ Each project includes:
 - 📘 Project Documentation
 - 🧹 Data Preprocessing
 - ⚙️ Feature Transformation
+- 🔄 Encoding Techniques
 - 🤖 Machine Learning Implementation
 - 📊 Data Visualization
 - 📈 Model Evaluation
@@ -115,27 +124,61 @@ Each project includes:
 
 This repository emphasizes learning through implementation by practicing:
 
-- Data Preprocessing
+### Data Preprocessing
+
+- Data Cleaning
 - Missing Value Handling
 - SimpleImputer
 - Feature Scaling
+- MinMaxScaler
+- StandardScaler
+
+### Categorical Encoding
+
 - Label Encoding
 - One-Hot Encoding
 - Ordinal Encoding
 - Target Encoding
-- Column Transformer
+
+### Feature Transformation
+
+- ColumnTransformer
 - Multiple Column Transformations
-- Machine Learning Pipelines
+- Numerical Feature Transformation
+- Categorical Feature Transformation
+
+### Machine Learning Pipelines
+
 - Train-Test Split
+- Pipeline
+- Preprocessing Pipelines
+- Combining Preprocessing and Models
+
+### Machine Learning Algorithms
+
+- Linear Regression
+- Polynomial Regression
+- Multiple Linear Regression
 - Logistic Regression
+
+### Model Evaluation
+
+- Accuracy Score
+- Confusion Matrix
+- Precision
+- Recall
+- F1 Score
+- Classification Report
+
+### Exploratory & Analytical Skills
+
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
 - Feature Selection
+- Data Visualization
 - Model Building
 - Prediction
-- Model Evaluation
-- Performance Metrics
-- Data Visualization
+- Performance Analysis
 
 ---
 
@@ -156,6 +199,7 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Completed | Column Transformer (Multiple Transformers) |
 | ✅ Completed | Pipeline with ColumnTransformer & Logistic Regression |
 | ✅ Completed | Missing Value Imputation — SimpleImputer |
+| ⭐ Completed | Logistic Regression — Loan Approval |
 
 ---
 
@@ -164,10 +208,11 @@ This repository emphasizes learning through implementation by practicing:
 - Build a strong foundation in Machine Learning
 - Understand Machine Learning algorithms through implementation
 - Learn real-world data preprocessing techniques
-- Understand categorical and numerical feature transformations
+- Understand numerical and categorical feature transformations
 - Learn how to handle missing values
 - Understand Machine Learning pipelines
-- Learn how different preprocessing techniques work together
+- Learn classification techniques
+- Understand model evaluation metrics
 - Improve Python programming skills
 - Improve analytical and problem-solving skills
 - Maintain clean and organized project documentation
@@ -191,37 +236,16 @@ This repository emphasizes learning through implementation by practicing:
 | ✅ Day 10 | Column Transformer | Completed |
 | ✅ Day 11 | Column Transformer (Multiple Transformers) | Completed |
 | ✅ Day 12 | Pipeline with ColumnTransformer & Logistic Regression | Completed |
-| ⭐ Day 13 | Missing Value Imputation — SimpleImputer | **Completed** |
+| ✅ Day 13 | Missing Value Imputation — SimpleImputer | Completed |
+| ⭐ Day 14 | Logistic Regression — Loan Approval Prediction | **Completed** |
 
 🚀 More Machine Learning projects will be added as I continue learning and implementing new concepts.
 
 ---
 
-# 🌟 Upcoming Projects
+# 🧠 Learning Progress
 
-The following topics are planned for future implementation:
-
-- 🔜 Advanced Missing Value Imputation
-- 🔜 Simple Imputer with ColumnTransformer
-- 🔜 Advanced Machine Learning Pipelines
-- 🔜 Logistic Regression Projects
-- 🔜 Decision Tree
-- 🔜 Random Forest
-- 🔜 K-Nearest Neighbors (KNN)
-- 🔜 Support Vector Machine (SVM)
-- 🔜 Naive Bayes
-- 🔜 K-Means Clustering
-- 🔜 Principal Component Analysis (PCA)
-- 🔜 Cross Validation
-- 🔜 Hyperparameter Tuning
-- 🔜 Model Evaluation Metrics
-- 🔜 Real-World Machine Learning Projects
-
----
-
-# 🧠 Key Learning Progress
-
-My Machine Learning journey has progressed from fundamental regression algorithms to practical data preprocessing and pipeline construction.
+My Machine Learning journey has progressed from fundamental regression algorithms to practical data preprocessing, feature transformation, pipelines, and classification.
 
 ```text
 Regression
@@ -238,8 +262,34 @@ Machine Learning Pipeline
     ↓
 Missing Value Imputation
     ↓
+Logistic Regression
+    ↓
+Classification & Model Evaluation
+    ↓
 Advanced Machine Learning Concepts
 ```
+
+---
+
+# 🌟 Upcoming Projects
+
+The following topics are planned for future implementation:
+
+- 🔜 Advanced Missing Value Imputation
+- 🔜 SimpleImputer with ColumnTransformer
+- 🔜 Advanced Machine Learning Pipelines
+- 🔜 Logistic Regression Projects
+- 🔜 Decision Tree
+- 🔜 Random Forest
+- 🔜 K-Nearest Neighbors (KNN)
+- 🔜 Support Vector Machine (SVM)
+- 🔜 Naive Bayes
+- 🔜 K-Means Clustering
+- 🔜 Principal Component Analysis (PCA)
+- 🔜 Cross Validation
+- 🔜 Hyperparameter Tuning
+- 🔜 Advanced Model Evaluation
+- 🔜 Real-World Machine Learning Projects
 
 ---
 
@@ -249,7 +299,9 @@ This repository represents my Machine Learning learning journey through practica
 
 Each project is designed to strengthen my understanding of Machine Learning concepts by combining theoretical knowledge with hands-on implementation using Python and Scikit-learn.
 
-As I continue learning, this repository will expand with more preprocessing techniques, Machine Learning algorithms, pipelines, evaluation methods, and real-world projects.
+Starting from regression algorithms, the journey has gradually expanded into data preprocessing, feature encoding, feature transformation, Machine Learning pipelines, missing value handling, and classification.
+
+As I continue learning, this repository will expand with more Machine Learning algorithms, advanced preprocessing techniques, evaluation methods, and real-world projects.
 
 ---
 
@@ -260,3 +312,11 @@ Thank you for visiting my Machine Learning repository.
 If you find these projects useful or interesting, feel free to ⭐ **Star** this repository.
 
 Happy Learning! 🚀
+
+---
+
+## 📈 Progress
+
+**14 Days of Machine Learning — Completed & Continuously Learning 🚀**
+
+> Learn → Implement → Analyze → Improve → Repeat
