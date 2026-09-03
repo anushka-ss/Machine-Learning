@@ -1,125 +1,75 @@
-🤖 MACHINE LEARNING
+# 🤖 MACHINE LEARNING
 
-🚀 A Hands-On Journey from Fundamentals to Practical Machine Learning
+### 🚀 A Hands-On Journey from Fundamentals to Practical Machine Learning
 
-Learn → Implement → Analyze → Improve → Repeat
+Welcome to my **Machine Learning journey**!
 
-A structured collection of Machine Learning concepts and practical projects developed through continuous hands-on learning.
+This repository documents my hands-on learning experience with **Machine Learning algorithms, data preprocessing techniques, feature engineering, model evaluation, and practical ML workflows**.
 
-This repository documents my progression from regression and data preprocessing to classification, model evaluation, and real-world prediction problems using Python and Scikit-learn.
+Each project focuses on understanding concepts practically by implementing them using **Python, Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn**.
 
-📖 ABOUT THIS REPOSITORY
+---
 
-This repository represents my practical Machine Learning learning journey.
+# 📌 ABOUT THIS REPOSITORY
 
-Each project is designed to understand not only the algorithm, but the complete Machine Learning workflow:
+This repository is a collection of my **Machine Learning practice projects and implementations**.
 
-Data
-  ↓
-Data Understanding
-  ↓
-Data Preprocessing
-  ↓
-Feature Engineering
-  ↓
-Feature Transformation
-  ↓
-Model Building
-  ↓
-Prediction
-  ↓
-Model Evaluation
-  ↓
-Performance Analysis
+My approach is to learn Machine Learning step-by-step:
 
-Core areas covered
+> **Understand the Concept → Preprocess the Data → Build the Model → Evaluate the Model → Analyze the Results**
 
-📥 Data Loading & Inspection
+The repository is continuously updated as I learn and implement new concepts.
 
-🧹 Data Cleaning & Preprocessing
+---
 
-🧩 Missing Value Handling
+# 🛠️ TECHNOLOGY STACK
 
-🏷️ Categorical Encoding
+| Technology          | Purpose                       |
+| ------------------- | ----------------------------- |
+| 🐍 Python           | Programming Language          |
+| 🔢 NumPy            | Numerical Computing           |
+| 🐼 Pandas           | Data Manipulation & Analysis  |
+| 📊 Matplotlib       | Data Visualization            |
+| 📈 Seaborn          | Statistical Visualization     |
+| 🤖 Scikit-learn     | Machine Learning              |
+| 📓 Jupyter Notebook | Development & Experimentation |
+| 🔧 Git & GitHub     | Version Control & Portfolio   |
 
-⚖️ Feature Scaling
+---
 
-🔄 Column-wise Transformation
+# 📂 REPOSITORY STRUCTURE
 
-🔗 Machine Learning Pipelines
-
-🏗️ Feature Engineering
-
-🤖 Model Training
-
-🎯 Classification
-
-📊 Model Evaluation
-
-📈 Visualization
-
-📉 Performance Analysis
-
-🛠️ TECHNOLOGY STACK
-
-Technology
-
-Purpose
-
-🐍 Python
-
-Programming & Machine Learning
-
-🔢 NumPy
-
-Numerical Computing
-
-🐼 Pandas
-
-Data Manipulation & Analysis
-
-📊 Matplotlib
-
-Data Visualization
-
-📈 Seaborn
-
-Statistical Visualization
-
-🤖 Scikit-learn
-
-Machine Learning & Preprocessing
-
-🎯 category_encoders
-
-Advanced Categorical Encoding
-
-📓 Jupyter Notebook
-
-Interactive Development
-
-📂 REPOSITORY STRUCTURE
-
+```text
 Machine-Learning
 │
 ├── Linear-Regression
+│
 ├── Polynomial-Regression
+│
 ├── Multiple-Linear-Regression
 │
-├── Feature-Scaling-StandardScaler
-├── Feature-Scaling-MinMaxScaler
+├── StandardScaler
+│
+├── MinMaxScaler
 │
 ├── Label-Encoding
-├── OneHot-Encoding
+│
+├── One-Hot-Encoding
+│
 ├── Ordinal-Encoding
+│
 ├── Target-Encoding
 │
 ├── Column-Transformer
+│
 ├── Column-Transformer-Multiple-Transformers
+│
 ├── Pipeline-ColumnTransformer-LogisticRegression
-├── Missing-Value-Imputation-SimpleImputer
+│
+├── Missing-Value-Imputation
 │
 ├── Logistic-Regression-Loan-Approval
+│
 ├── Classification-Metrics-Loan-Data
 │
 ├── Loan-Default-Risk-Classification-Metrics
@@ -127,598 +77,571 @@ Machine-Learning
 │   ├── loan_default_risk_dataset.csv
 │   └── README.md
 │
+├── Decision-Tree
+│   ├── Decision_Tree_Classifier.ipynb
+│   ├── Decision_Tree_Regressor.ipynb
+│   ├── spam_email_dataset.csv
+│   ├── winequality-red.csv
+│   └── README.md
+│
 └── README.md
+```
 
-📚 PROJECT PORTFOLIO
+---
 
-#
+# 📚 MACHINE LEARNING PROJECTS
 
-Project
+## 📈 01 — LINEAR REGRESSION
 
-Key Concept
+Implemented the fundamentals of **Linear Regression** to understand the relationship between independent and dependent variables.
 
-01
+### Concepts Covered
 
-📈 Linear Regression
+* Simple Linear Regression
+* Independent and Dependent Variables
+* Train-Test Split
+* Model Training
+* Predictions
+* Model Evaluation
+* R² Score
 
-Continuous Value Prediction
+---
 
-02
+## 📊 02 — POLYNOMIAL REGRESSION
 
-📊 Polynomial Regression
+Explored **Polynomial Regression** to understand how Machine Learning models can capture non-linear relationships.
 
-Non-Linear Relationships
+### Concepts Covered
 
-03
+* Polynomial Features
+* Different Polynomial Degrees
+* Model Training
+* Predictions
+* Train vs Test Performance
+* Underfitting
+* Overfitting
+* R² Score
 
-📉 Multiple Linear Regression
+---
 
-Multiple Features
+## 📈 03 — MULTIPLE LINEAR REGRESSION
 
-04
+Implemented **Multiple Linear Regression** using multiple independent variables to predict a target variable.
 
-⚖️ Feature Scaling — StandardScaler
+### Concepts Covered
 
-Standardization
+* Multiple Features
+* Train-Test Split
+* Model Training
+* Prediction
+* Model Evaluation
+* R² Score
 
-05
+---
 
-📏 Feature Scaling — MinMaxScaler
+# ⚙️ DATA PREPROCESSING
 
-Normalization
+Machine Learning models require properly prepared data.
 
-06
+The following preprocessing techniques have been implemented:
 
-🏷️ Label Encoding
+---
 
-Categorical Encoding
+## 🔹 04 — STANDARD SCALER
 
-07
+Implemented feature scaling using **Standardization** with `StandardScaler`.
 
-🔢 One-Hot Encoding
+### Concepts Covered
 
-Dummy Variables
+* Feature Scaling
+* Standardization
+* Mean
+* Standard Deviation
+* Transformation of Numerical Features
 
-08
+---
 
-🔠 Ordinal Encoding
+## 🔹 05 — MINMAX SCALER
 
-Ordered Categories
+Implemented feature scaling using **Min-Max Normalization** with `MinMaxScaler`.
 
-09
+### Concepts Covered
 
-🎯 Target Encoding
+* Feature Scaling
+* Normalization
+* Minimum and Maximum Values
+* Transformation of Numerical Features
 
-Target-Based Encoding
+---
 
-10
+## 🔹 06 — LABEL ENCODING
 
-🔄 Column Transformer
+Implemented **Label Encoding** to convert categorical labels into numerical values.
 
-Column-Wise Preprocessing
+### Concepts Covered
 
-11
+* Categorical Data
+* Numerical Representation
+* `LabelEncoder`
+* Encoding Categories
 
-⚙️ Column Transformer — Multiple Transformers
+---
 
-Combined Transformations
+## 🔹 07 — ONE-HOT ENCODING
 
-12
+Implemented **One-Hot Encoding** to convert categorical variables into binary indicator columns.
 
-🔗 Pipeline with ColumnTransformer & Logistic Regression
+### Concepts Covered
 
-End-to-End Pipeline
+* Categorical Features
+* Dummy Variables
+* `OneHotEncoder`
+* Handling Multiple Categories
 
-13
+---
 
-🧹 Missing Value Imputation — SimpleImputer
+## 🔹 08 — ORDINAL ENCODING
 
-Missing Data Handling
+Implemented **Ordinal Encoding** for categorical variables where the categories have a meaningful order.
 
-14
+### Concepts Covered
 
-🤖 Logistic Regression — Loan Approval
+* Ordered Categories
+* `OrdinalEncoder`
+* Mapping Categories to Numerical Values
 
-Binary Classification
+---
 
-15
+## 🔹 09 — TARGET ENCODING
 
-📊 Classification Metrics — Loan Data
+Explored **Target Encoding**, where categorical variables are represented using information derived from the target variable.
 
-Model Evaluation
+### Concepts Covered
 
-16
+* Categorical Variables
+* Target-Based Encoding
+* Numerical Representation of Categories
 
-🏦 Loan Default Risk — Classification Metrics
+---
 
-Practical Classification
+# 🔧 COLUMN TRANSFORMER & PIPELINES
 
-🚀 WHAT YOU'LL FIND IN EACH PROJECT
+## 🔹 10 — COLUMN TRANSFORMER
 
-Depending on the project, the implementation may include:
+Learned how to apply different preprocessing techniques to different columns within a dataset using `ColumnTransformer`.
 
-📄 Dataset
+### Concepts Covered
 
-📓 Jupyter Notebook
+* ColumnTransformer
+* Numerical Feature Transformation
+* Categorical Feature Transformation
+* Multiple Preprocessing Steps
 
-📘 Project README
+---
 
-🔍 Data Exploration
+## 🔹 11 — COLUMN TRANSFORMER — MULTIPLE TRANSFORMERS
 
-🧹 Data Preprocessing
+Implemented multiple preprocessing transformations together for handling different types of features.
 
-🏷️ Encoding
+### Concepts Covered
 
-⚖️ Feature Scaling
+* Multiple Transformers
+* Numerical Preprocessing
+* Categorical Preprocessing
+* ColumnTransformer
+* Efficient Data Preparation
 
-🔄 Feature Transformation
+---
 
-🔗 Pipeline Construction
+## 🔹 12 — PIPELINE WITH COLUMNTRANSFORMER & LOGISTIC REGRESSION
 
-🤖 Model Training
+Combined preprocessing and Machine Learning into a single workflow using:
 
-🔮 Prediction
+* `Pipeline`
+* `ColumnTransformer`
+* `LogisticRegression`
 
-📊 Evaluation
+This project helped understand how to build a **clean and organized Machine Learning workflow**.
 
-📈 Visualization
+---
 
-🧠 Performance Analysis
+# 🧹 MISSING VALUE HANDLING
 
-🎯 LEARNING ROADMAP
+## 🔹 13 — MISSING VALUE IMPUTATION
 
-01 — 📈 REGRESSION
+Implemented missing-value handling using:
 
-Linear Regression
+### `SimpleImputer`
 
-Polynomial Regression
+Learned how missing values can be replaced using appropriate statistical strategies before training a Machine Learning model.
 
-Multiple Linear Regression
+### Concepts Covered
 
-02 — 🧹 DATA PREPROCESSING
+* Missing Data
+* Data Cleaning
+* SimpleImputer
+* Mean Imputation
+* Median Imputation
+* Handling Missing Values Before Model Training
 
-Data Cleaning
+---
 
-Missing Value Handling
+# 🏦 CLASSIFICATION PROJECTS
 
-SimpleImputer
+## 🔹 14 — LOGISTIC REGRESSION — LOAN APPROVAL PREDICTION
 
-Numerical Data Preprocessing
+Implemented **Logistic Regression** for predicting loan approval.
 
-Categorical Data Preprocessing
+### Concepts Covered
 
-03 — ⚖️ FEATURE SCALING
+* Binary Classification
+* Logistic Regression
+* Feature Preprocessing
+* Train-Test Split
+* Model Training
+* Predictions
+* Classification Evaluation
 
-StandardScaler
+---
 
-MinMaxScaler
+# 📊 CLASSIFICATION METRICS
 
-RobustScaler
+## 🔹 15 — CLASSIFICATION METRICS — LOAN DATA
 
-04 — 🏷️ CATEGORICAL ENCODING
+Explored important classification evaluation metrics to understand how well a classification model performs.
 
-Label Encoding
+### Metrics Covered
 
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Confusion Matrix
+* Classification Report
+
+Understanding different metrics is important because **accuracy alone may not always provide a complete picture of model performance**.
+
+---
+
+# 🏦 LOAN DEFAULT RISK
+
+## 🔹 16 — LOAN DEFAULT RISK — CLASSIFICATION METRICS
+
+Applied classification evaluation techniques to a **Loan Default Risk** dataset.
+
+### Focus Areas
+
+* Classification Model Evaluation
+* Confusion Matrix
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Classification Report
+
+This project helped strengthen my understanding of evaluating classification models in a practical Machine Learning problem.
+
+---
+
+# 🌳 DECISION TREE
+
+## 🔹 17 — DECISION TREE — CLASSIFICATION & REGRESSION
+
+Implemented **Decision Tree Machine Learning workflows** for classification and regression problems.
+
+---
+
+## 📧 DECISION TREE CLASSIFICATION — SPAM EMAIL DETECTION
+
+Built a Decision Tree classification workflow using a **Spam Email dataset**.
+
+### Concepts Covered
+
+* `DecisionTreeClassifier`
+* Entropy
+* Maximum Tree Depth
+* One-Hot Encoding
+* `ColumnTransformer`
+* `Pipeline`
+* Classification Report
+* Model Evaluation
+
+### Model Configuration
+
+```python
+DecisionTreeClassifier(
+    random_state=42,
+    criterion='entropy',
+    max_depth=4
+)
+```
+
+The preprocessing workflow includes:
+
+```text
+Categorical Features
+        ↓
 One-Hot Encoding
-
-Ordinal Encoding
-
-Target Encoding
-
-05 — 🔄 FEATURE TRANSFORMATION
-
+        ↓
 ColumnTransformer
-
-Multiple Column Transformations
-
-Numerical Feature Transformation
-
-Categorical Feature Transformation
-
-06 — 🔗 MACHINE LEARNING PIPELINES
-
-Train-Test Split
-
+        ↓
 Pipeline
-
-Preprocessing Pipeline
-
-Combining Preprocessing and Models
-
-07 — 🤖 CLASSIFICATION
-
-Logistic Regression
-
-Binary Classification
-
-Classification Prediction
-
-08 — 📊 MODEL EVALUATION
-
-Confusion Matrix
-
-Accuracy
-
-Precision
-
-Recall
-
-F1 Score
-
+        ↓
+DecisionTreeClassifier
+        ↓
 Classification Report
+```
 
-Performance Analysis
+---
 
-📅 16-DAY MACHINE LEARNING JOURNEY
+## 🍷 DECISION TREE REGRESSION — WINE QUALITY
 
-Day
+Explored a regression workflow using the **Wine Quality dataset**.
 
-Topic
+### Regression Evaluation Metrics
 
-Status
+* R² Score
+* MAE
+* MSE
+* RMSE
 
-01
+### Classification vs Regression
 
-📈 Linear Regression
-
-✅ Completed
-
-02
-
-📊 Polynomial Regression
-
-✅ Completed
-
-03
-
-📉 Multiple Linear Regression
-
-✅ Completed
-
-04
-
-⚖️ Feature Scaling — StandardScaler
-
-✅ Completed
-
-05
-
-📏 Feature Scaling — MinMaxScaler
-
-✅ Completed
-
-06
-
-🏷️ Label Encoding
-
-✅ Completed
-
-07
-
-🔢 One-Hot Encoding
-
-✅ Completed
-
-08
-
-🔠 Ordinal Encoding
-
-✅ Completed
-
-09
-
-🎯 Target Encoding
-
-✅ Completed
-
-10
-
-🔄 Column Transformer
-
-✅ Completed
-
-11
-
-⚙️ Column Transformer — Multiple Transformers
-
-✅ Completed
-
-12
-
-🔗 Pipeline with ColumnTransformer & Logistic Regression
-
-✅ Completed
-
-13
-
-🧹 Missing Value Imputation — SimpleImputer
-
-✅ Completed
-
-14
-
-🤖 Logistic Regression — Loan Approval Prediction
-
-✅ Completed
-
-15
-
-📊 Classification Metrics — Loan Data
-
-✅ Completed
-
-16
-
-🏦 Loan Default Risk — Classification Metrics
-
-⭐ Completed
-
-📊 CLASSIFICATION METRICS
-
-A classification model should not always be evaluated using Accuracy alone.
-
-Different metrics provide different perspectives on model performance.
-
-🔲 CONFUSION MATRIX
-
-A Confusion Matrix summarizes classification predictions into:
-
-
-
-Predicted Positive
-
-Predicted Negative
-
-Actual Positive
-
-True Positive (TP)
-
-False Negative (FN)
-
-Actual Negative
-
-False Positive (FP)
-
-True Negative (TN)
-
-Four fundamental outcomes
-
-TP — True Positive
-
-TN — True Negative
-
-FP — False Positive
-
-FN — False Negative
-
-🎯 ACCURACY
-
-Measures the proportion of total predictions that are correct.
-
-Accuracy =
-(TP + TN) / (TP + TN + FP + FN)
-
-🎯 PRECISION
-
-Answers:
-
-Of all samples predicted as positive, how many were actually positive?
-
-Precision =
-TP / (TP + FP)
-
-🎯 RECALL
-
-Answers:
-
-Of all actual positive samples, how many were correctly identified?
-
-Recall =
-TP / (TP + FN)
-
-🎯 F1 SCORE
-
-F1 Score provides a balance between Precision and Recall.
-
-F1 Score =
-2 × (Precision × Recall)
-/
-(Precision + Recall)
-
-🏦 LOAN DEFAULT RISK — DAY 16
-
-Day 16 applies the classification evaluation concepts to a practical Loan Default Risk prediction problem.
-
-The project combines:
-
-Loan Default Risk Dataset
-          ↓
-    Data Inspection
-          ↓
-    Train-Test Split
-          ↓
-    Missing Value Handling
-          ↓
-      Feature Scaling
-          ↓
-    ColumnTransformer
-          ↓
-        Pipeline
-          ↓
-  Logistic Regression
-          ↓
-       Prediction
-          ↓
+| Classification              | Regression                |
+| --------------------------- | ------------------------- |
+| Predicts categories/classes | Predicts numerical values |
+| Example: Spam / Not Spam    | Example: Wine Quality     |
+| Uses classification metrics | Uses regression metrics   |
+| Classification model        | Regression model          |
+
+---
+
+# 🗺️ MY MACHINE LEARNING JOURNEY
+
+| Day | Topic                                                 | Status          |
+| --- | ----------------------------------------------------- | --------------- |
+| 01  | 📈 Linear Regression                                  | ✅ Completed     |
+| 02  | 📊 Polynomial Regression                              | ✅ Completed     |
+| 03  | 📈 Multiple Linear Regression                         | ✅ Completed     |
+| 04  | ⚙️ StandardScaler                                     | ✅ Completed     |
+| 05  | ⚙️ MinMaxScaler                                       | ✅ Completed     |
+| 06  | 🔤 Label Encoding                                     | ✅ Completed     |
+| 07  | 🔢 One-Hot Encoding                                   | ✅ Completed     |
+| 08  | 🔢 Ordinal Encoding                                   | ✅ Completed     |
+| 09  | 🎯 Target Encoding                                    | ✅ Completed     |
+| 10  | 🔧 Column Transformer                                 | ✅ Completed     |
+| 11  | 🔧 Column Transformer — Multiple Transformers         | ✅ Completed     |
+| 12  | 🔄 Pipeline + ColumnTransformer + Logistic Regression | ✅ Completed     |
+| 13  | 🧹 Missing Value Imputation — SimpleImputer           | ✅ Completed     |
+| 14  | 🏦 Logistic Regression — Loan Approval Prediction     | ✅ Completed     |
+| 15  | 📊 Classification Metrics — Loan Data                 | ✅ Completed     |
+| 16  | 🏦 Loan Default Risk — Classification Metrics         | ✅ Completed     |
+| 17  | 🌳 Decision Tree — Classification & Regression        | ⭐ **Completed** |
+
+---
+
+# 🧠 KEY LEARNING AREAS
+
+Through these projects, I have gained hands-on experience with:
+
+## 📌 Regression
+
+* Linear Regression
+* Polynomial Regression
+* Multiple Linear Regression
+* Regression Model Evaluation
+
+## 📌 Classification
+
+* Logistic Regression
+* Decision Tree Classification
+* Binary Classification
+* Classification Model Evaluation
+
+## 📌 Data Preprocessing
+
+* Standardization
+* Normalization
+* Label Encoding
+* One-Hot Encoding
+* Ordinal Encoding
+* Target Encoding
+* Missing Value Imputation
+
+## 📌 Feature Transformation
+
+* ColumnTransformer
+* Multiple Transformers
+* Pipelines
+
+## 📌 Model Evaluation
+
+### Regression Metrics
+
+* R² Score
+* MAE
+* MSE
+* RMSE
+
+### Classification Metrics
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Confusion Matrix
+* Classification Report
+
+---
+
+# 🔄 MACHINE LEARNING WORKFLOW
+
+My projects follow a structured Machine Learning workflow:
+
+```text
+             📂 Dataset
+                 ↓
+        🔍 Understand Data
+                 ↓
+          🧹 Data Cleaning
+                 ↓
+       ⚙️ Data Preprocessing
+                 ↓
+        🔄 Feature Engineering
+                 ↓
+          ✂️ Train-Test Split
+                 ↓
+          🤖 Model Selection
+                 ↓
+           🏋️ Model Training
+                 ↓
+           🔮 Predictions
+                 ↓
+          📊 Model Evaluation
+                 ↓
+          🔍 Result Analysis
+```
+
+---
+
+# 📈 LEARNING PROGRESS
+
+```text
+Machine Learning Fundamentals
+            ↓
+       Regression
+            ↓
+  Data Preprocessing
+            ↓
+   Feature Encoding
+            ↓
+ Feature Transformation
+            ↓
+        Pipelines
+            ↓
+      Classification
+            ↓
  Classification Metrics
+            ↓
+      Decision Trees
+            ↓
+     🚀 Continuing...
+```
 
-Techniques practiced
+---
 
-SimpleImputer
+# 🎯 CURRENT PROGRESS
 
-RobustScaler
+## ⭐ DAY 17 COMPLETED
 
-StandardScaler
+I have progressed from basic regression algorithms to:
 
-ColumnTransformer
+* Regression Algorithms
+* Data Preprocessing
+* Feature Scaling
+* Categorical Encoding
+* Feature Transformation
+* ColumnTransformer
+* Pipelines
+* Logistic Regression
+* Classification
+* Classification Metrics
+* Practical Prediction Problems
+* Decision Tree Classification
+* Decision Tree Regression Workflows
 
-Pipeline
+The goal is to continue building a strong foundation through **hands-on implementation rather than only theoretical learning**.
 
-Logistic Regression
+---
 
-Confusion Matrix
+# 🚀 REPOSITORY GOALS
 
-Accuracy
+The main goals of this repository are:
 
-Precision
+* Build a strong Machine Learning foundation
+* Implement concepts using Python
+* Practice data preprocessing
+* Understand feature engineering
+* Understand model evaluation
+* Work with practical datasets
+* Develop Machine Learning problem-solving skills
+* Maintain a consistent learning record
+* Build a professional Machine Learning portfolio
 
-Classification Report
+---
 
-🧠 LEARNING PROGRESS
+# 📌 WHY THIS REPOSITORY?
 
-My learning progression has developed from basic predictive algorithms into a structured Machine Learning workflow:
+This repository represents my **continuous Machine Learning learning journey**.
 
-REGRESSION
-    ↓
-DATA PREPROCESSING
-    ↓
-FEATURE SCALING
-    ↓
-CATEGORICAL ENCODING
-    ↓
-COLUMN TRANSFORMATION
-    ↓
-MACHINE LEARNING PIPELINES
-    ↓
-LOGISTIC REGRESSION
-    ↓
-CLASSIFICATION
-    ↓
-CLASSIFICATION METRICS
-    ↓
-LOAN DEFAULT RISK CLASSIFICATION
-    ↓
-ADVANCED MACHINE LEARNING
+Instead of learning algorithms only theoretically, I am implementing each concept through practical notebooks and datasets.
 
-🎯 REPOSITORY GOALS
+My learning philosophy:
 
-The main goals of this repository are to:
+> **Learn → Implement → Evaluate → Improve → Repeat**
 
-Build a strong foundation in Machine Learning
+---
 
-Understand algorithms through implementation
+# 🔮 NEXT STEPS
 
-Develop practical data preprocessing skills
+I will continue expanding this repository with new:
 
-Understand feature transformation techniques
+* Machine Learning Algorithms
+* Data Preprocessing Techniques
+* Feature Engineering Methods
+* Model Evaluation Techniques
+* Classification Algorithms
+* Regression Algorithms
+* Practical Machine Learning Projects
 
-Learn how to handle missing values
+The goal is to gradually move from **Machine Learning fundamentals to more advanced and real-world applications**.
 
-Build reusable Machine Learning pipelines
+---
 
-Understand classification problems
+# 👩‍💻 ABOUT ME
 
-Learn appropriate model evaluation techniques
+I am a **Computer Science & Engineering graduate** building my skills in:
 
-Improve Python and Scikit-learn skills
+* Python
+* Machine Learning
+* Data Science
+* Artificial Intelligence
 
-Strengthen analytical and problem-solving abilities
+I am developing my technical skills through **continuous hands-on learning, practical implementation, and project-based learning**.
 
-Maintain clean and organized project documentation
+This repository represents my ongoing journey toward becoming a strong **Machine Learning / Python professional**.
 
-Build a professional Machine Learning portfolio
+---
 
-🌟 UPCOMING LEARNING TOPICS
+# ⭐ SUPPORT
 
-The next stages of my Machine Learning journey will include:
+If you find this repository useful or interesting, feel free to ⭐ **Star** the repository!
 
-🌳 Decision Tree
+---
 
-🌲 Random Forest
+# 🚀 LEARNING. BUILDING. IMPROVING.
 
-📍 K-Nearest Neighbors (KNN)
+### **Day 17 — Decision Tree completed.**
 
-📐 Support Vector Machine (SVM)
+### **The journey continues... 🤖**
 
-🎲 Naive Bayes
-
-🔁 Cross Validation
-
-🎛️ Hyperparameter Tuning
-
-📊 Advanced Model Evaluation
-
-🤝 Ensemble Learning
-
-🧩 Clustering
-
-🔵 K-Means
-
-📉 Principal Component Analysis (PCA)
-
-🚀 Real-World Machine Learning Projects
-
-💡 KEY LEARNING
-
-There is no single classification metric that is best for every problem.
-
-The appropriate evaluation metric depends on:
-
-Class distribution
-
-Business requirements
-
-Cost of False Positives
-
-Cost of False Negatives
-
-Importance of Precision vs Recall
-
-A complete evaluation should therefore consider multiple metrics.
-
-                 CLASSIFICATION MODEL
-                         ↓
-                    PREDICTIONS
-                         ↓
-                  CONFUSION MATRIX
-                         ↓
-              ┌──────────┴──────────┐
-              ↓                     ↓
-          ACCURACY            OTHER METRICS
-                                    ↓
-                         ┌──────────┼──────────┐
-                         ↓          ↓          ↓
-                    PRECISION     RECALL    F1 SCORE
-                         └──────────┼──────────┘
-                                    ↓
-                         MODEL PERFORMANCE
-
-⭐ WHY THIS REPOSITORY?
-
-This repository represents my Machine Learning journey through consistent practice and implementation.
-
-Instead of learning algorithms only theoretically, I am building projects to understand how different Machine Learning techniques fit together in an end-to-end workflow.
-
-The journey so far:
-
-Regression → Preprocessing → Feature Transformation → Pipelines → Classification → Model Evaluation → Loan Default Risk
-
-The repository will continue to grow as I learn more advanced Machine Learning concepts and work on practical projects.
-
-📈 CURRENT PROGRESS
-
-🟢 16 Days Completed
-
-████████████████████████████████████████
-16 Days of Machine Learning
-
-Status: 🚀 Continuously Learning
-
-📬 CONNECT
-
-Thank you for visiting my Machine Learning repository! 🤖
-
-If you find these projects useful or interesting, feel free to ⭐ Star the repository.
-
-🚀 Keep Learning. Keep Building. Keep Improving.
-
-Learn → Implement → Analyze → Improve → Repeat
