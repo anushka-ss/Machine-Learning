@@ -1,3 +1,5 @@
+# Updated `README.md`
+
 ````markdown
 # 🤖 MACHINE LEARNING
 
@@ -93,6 +95,11 @@ Machine-Learning
 ├── K-Nearest-Neighbour
 │   ├── KNN_Diabetes_Classification.ipynb
 │   ├── diabetes.csv
+│   └── README.md
+│
+├── SVM
+│   ├── SVM_Binary_Classification.ipynb
+│   ├── loan_data.csv
 │   └── README.md
 │
 └── README.md
@@ -433,8 +440,6 @@ Implemented **GridSearchCV** to understand how hyperparameter tuning can be used
 
 This project uses **Decision Tree Classification** with a Loan dataset.
 
----
-
 ## 🔍 WHAT IS HYPERPARAMETER TUNING?
 
 Hyperparameters are settings of a Machine Learning model that are defined **before the training process**.
@@ -450,19 +455,13 @@ Examples include:
 
 Hyperparameter tuning helps search for combinations of values and evaluate them using cross-validation.
 
----
-
 ## 🤖 MODEL USED
 
 ```python
 DecisionTreeClassifier(random_state=42)
 ```
 
----
-
 ## ⚙️ GRIDSEARCHCV
-
-`GridSearchCV` performs an exhaustive search over the specified hyperparameter combinations.
 
 The parameter grid used in this project includes:
 
@@ -477,11 +476,7 @@ param_grid = {
 }
 ```
 
----
-
 ## 🔢 GRID SEARCH COMBINATIONS
-
-The search contains:
 
 ```text
 2 × 2 × 4 × 4 × 4 × 2
@@ -505,8 +500,6 @@ Therefore:
         =
 1536 Fits
 ```
-
----
 
 ## 🔄 GRIDSEARCHCV WORKFLOW
 
@@ -534,8 +527,6 @@ Therefore:
               📈 Model Evaluation
 ```
 
----
-
 ## 🧠 KEY CONCEPTS LEARNED
 
 * Hyperparameters
@@ -557,8 +548,6 @@ Implemented the **K-Nearest Neighbour (KNN)** algorithm for a classification pro
 
 This project focuses on understanding a distance-based Machine Learning algorithm, feature scaling, Pipeline implementation, and hyperparameter tuning using GridSearchCV.
 
----
-
 ## 🧠 WHAT IS K-NEAREST NEIGHBOUR?
 
 **K-Nearest Neighbour (KNN)** is a supervised Machine Learning algorithm that can be used for classification and regression.
@@ -578,8 +567,6 @@ Majority Voting
       ↓
 Predicted Class
 ```
-
----
 
 ## 🩺 DIABETES CLASSIFICATION
 
@@ -602,8 +589,6 @@ The features include:
 * DiabetesPedigreeFunction
 * Age
 
----
-
 ## 📏 FEATURE SCALING
 
 KNN is a **distance-based algorithm**.
@@ -615,8 +600,6 @@ This project uses:
 ```python
 RobustScaler()
 ```
-
----
 
 ## 🔄 MACHINE LEARNING PIPELINE
 
@@ -651,11 +634,7 @@ Pipeline(
 📊 Model Evaluation
 ```
 
----
-
 ## ⚙️ HYPERPARAMETER TUNING
-
-`GridSearchCV` is used to search different KNN configurations.
 
 The parameter grid includes:
 
@@ -676,8 +655,6 @@ This gives:
 10 combinations
 ```
 
----
-
 ## 🔁 CROSS-VALIDATION
 
 The GridSearchCV configuration uses:
@@ -695,8 +672,6 @@ Therefore:
         =
 200 Fits
 ```
-
----
 
 ## 🏆 BEST PARAMETERS
 
@@ -722,8 +697,6 @@ The GridSearchCV scoring metric used was:
 scoring='f1'
 ```
 
----
-
 ## 📊 MODEL EVALUATION
 
 The final model is evaluated using:
@@ -740,43 +713,7 @@ The classification report provides:
 * Support
 * Accuracy
 
----
-
-## 📈 MODEL RESULTS
-
-### Training Set
-
-```text
-Accuracy: 0.80
-```
-
-For the positive class (`Outcome = 1`):
-
-```text
-Precision: 0.79
-Recall:    0.56
-F1-Score:  0.66
-```
-
-### Testing Set
-
-```text
-Accuracy: 0.72
-```
-
-For the positive class (`Outcome = 1`):
-
-```text
-Precision: 0.64
-Recall:    0.49
-F1-Score:  0.56
-```
-
----
-
 ## 🧠 KEY CONCEPTS LEARNED
-
-Through this project, I learned:
 
 * K-Nearest Neighbour
 * Distance-Based Classification
@@ -794,8 +731,6 @@ Through this project, I learned:
 * Recall
 * F1-Score
 * Accuracy
-
----
 
 ## 🔄 END-TO-END KNN WORKFLOW
 
@@ -827,6 +762,276 @@ Through this project, I learned:
 
 ---
 
+# 🤖 20 — SUPPORT VECTOR MACHINE (SVM)
+
+Implemented **Support Vector Machine (SVM)** using `SVC` for a **binary classification** problem.
+
+This project focuses on understanding how SVM can separate two classes using a decision boundary and how preprocessing, pipelines, and hyperparameter tuning can be combined in a Machine Learning workflow.
+
+## 📌 PROJECT FOCUS
+
+The Day 20 project covers:
+
+* Support Vector Machine
+* Support Vector Classifier
+* Binary Classification
+* Decision Boundary
+* Support Vectors
+* SVM Kernels
+* One-Hot Encoding
+* StandardScaler
+* ColumnTransformer
+* Pipeline
+* GridSearchCV
+* Hyperparameter Tuning
+* Classification Evaluation
+
+## 🧠 WHAT IS SVM?
+
+**Support Vector Machine (SVM)** is a supervised Machine Learning algorithm used for classification and regression.
+
+For classification, SVM attempts to find a decision boundary that separates different classes while maximizing the margin between them.
+
+```text
+Class 0                    Class 1
+
+● ● ● ●                  ○ ○ ○ ○
+ ● ● ●                    ○ ○
+     ●                  ○
+          |       |
+          |       |
+       Decision Boundary
+```
+
+## 🎯 BINARY CLASSIFICATION
+
+This project uses SVM for **binary classification**.
+
+The target variable is:
+
+```text
+loan_status
+```
+
+The target contains two classes:
+
+```text
+0
+1
+```
+
+The SVM model learns a decision boundary to separate the two classes.
+
+> **Note:** Day 20 currently demonstrates binary SVM classification. Multiclass SVM will be added as a separate implementation when executed.
+
+## 📂 DATASET
+
+The project uses a **Loan dataset**.
+
+The target column is:
+
+```text
+loan_status
+```
+
+The dataset contains numerical and categorical features that require preprocessing before model training.
+
+## 🔄 DATA PREPROCESSING
+
+The project applies different preprocessing techniques to numerical and categorical features.
+
+### 🔤 Categorical Features
+
+Categorical features are transformed using:
+
+```python
+OneHotEncoder()
+```
+
+### 📏 Numerical Features
+
+Numerical features are scaled using:
+
+```python
+StandardScaler()
+```
+
+## 🔧 COLUMN TRANSFORMER
+
+`ColumnTransformer` is used to apply the appropriate preprocessing technique to each type of feature.
+
+```python
+preprocessing = ColumnTransformer(
+    transformers=[
+        ('encoder', OneHotEncoder(), cat_cols),
+        ('scaling', StandardScaler(), num_cols)
+    ]
+)
+```
+
+## 🔄 MACHINE LEARNING PIPELINE
+
+The preprocessing steps and SVM model are combined using a Scikit-learn Pipeline.
+
+```python
+main_pipeline = Pipeline(
+    steps=[
+        ('pre', preprocessing),
+        ('model', SVC())
+    ]
+)
+```
+
+### Workflow
+
+```text
+📂 Loan Dataset
+      ↓
+🔍 Data Preparation
+      ↓
+🎯 Feature / Target Separation
+      ↓
+✂️ Train-Test Split
+      ↓
+🔤 One-Hot Encoding
+      ↓
+📏 StandardScaler
+      ↓
+🔧 ColumnTransformer
+      ↓
+🔄 Pipeline
+      ↓
+🤖 SVC
+      ↓
+🔎 GridSearchCV
+      ↓
+📊 Model Evaluation
+```
+
+## ⚙️ SVM HYPERPARAMETERS
+
+The project uses GridSearchCV to search different SVM configurations.
+
+### `C`
+
+The `C` parameter controls the trade-off between the margin and classification errors.
+
+### `kernel`
+
+The project searches the following kernels:
+
+```text
+rbf
+linear
+sigmoid
+poly
+```
+
+### `degree`
+
+For the polynomial kernel, different polynomial degrees are tested:
+
+```text
+2
+3
+5
+```
+
+## 🔎 GRIDSEARCHCV
+
+The parameter grid used is:
+
+```python
+param_grid = {
+    'model__C': [0.001, 0.01, 0.1, 1, 10, 100],
+    'model__kernel': ['rbf', 'linear', 'sigmoid', 'poly'],
+    'model__degree': [2, 3, 5]
+}
+```
+
+GridSearchCV searches through the specified combinations to identify a suitable SVM configuration.
+
+## 📊 MODEL EVALUATION
+
+The final SVM model is evaluated using:
+
+```python
+classification_report()
+```
+
+The classification report provides:
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Support
+
+## 🧠 KEY CONCEPTS LEARNED
+
+Through this project, I learned:
+
+* Support Vector Machine
+* Support Vector Classifier
+* Binary Classification
+* Decision Boundary
+* Maximum Margin
+* Support Vectors
+* C Parameter
+* SVM Kernels
+* RBF Kernel
+* Linear Kernel
+* Polynomial Kernel
+* Sigmoid Kernel
+* Polynomial Degree
+* One-Hot Encoding
+* StandardScaler
+* ColumnTransformer
+* Pipeline
+* GridSearchCV
+* Hyperparameter Tuning
+* Classification Report
+
+## 🔄 END-TO-END SVM WORKFLOW
+
+```text
+              📂 Loan Dataset
+                    ↓
+             🔍 Data Preparation
+                    ↓
+          🎯 Feature / Target Split
+                    ↓
+             ✂️ Train-Test Split
+                    ↓
+          🔤 One-Hot Encoding
+                    ↓
+             📏 StandardScaler
+                    ↓
+            🔧 ColumnTransformer
+                    ↓
+                🔄 Pipeline
+                    ↓
+                 🤖 SVC
+                    ↓
+             ⚙️ Parameter Grid
+                    ↓
+              🔎 GridSearchCV
+                    ↓
+              🏆 Best Model
+                    ↓
+             🔮 Predictions
+                    ↓
+          📊 Classification Report
+```
+
+## 📌 IMPORTANT TAKEAWAY
+
+SVM is a powerful supervised Machine Learning algorithm that can be used to separate classes by finding an appropriate decision boundary.
+
+This project helped me understand how **SVC, feature preprocessing, pipelines, and GridSearchCV** can be combined into a complete Machine Learning classification workflow.
+
+---
+
 # 🧠 KEY LEARNING AREAS
 
 Through these projects, I have gained hands-on experience with:
@@ -843,6 +1048,7 @@ Through these projects, I have gained hands-on experience with:
 * Logistic Regression
 * Decision Tree Classification
 * K-Nearest Neighbour Classification
+* Support Vector Machine Classification
 * Binary Classification
 * Classification Model Evaluation
 
@@ -888,8 +1094,9 @@ Through these projects, I have gained hands-on experience with:
 * GridSearchCV
 * Cross-Validation
 * Best Estimator Selection
-* KNN Hyperparameter Tuning
 * Decision Tree Hyperparameter Tuning
+* KNN Hyperparameter Tuning
+* SVM Hyperparameter Tuning
 * Model Optimization
 
 ---
@@ -953,6 +1160,12 @@ Machine Learning Fundamentals
             ↓
 Distance-Based Classification
             ↓
+ Support Vector Machine
+            ↓
+ Binary Classification
+            ↓
+      SVM Kernels
+            ↓
         🚀 Continuing...
 ```
 
@@ -980,13 +1193,14 @@ Distance-Based Classification
 | 16  | 🏦 Loan Default Risk — Classification Metrics         | ✅ Completed     |
 | 17  | 🌳 Decision Tree — Classification & Regression        | ✅ Completed     |
 | 18  | 🎯 GridSearchCV — Hyperparameter Tuning               | ✅ Completed     |
-| 19  | 🤖 K-Nearest Neighbour — Diabetes Classification      | ⭐ **Completed** |
+| 19  | 🤖 K-Nearest Neighbour — Diabetes Classification      | ✅ Completed     |
+| 20  | 🤖 Support Vector Machine — Binary Classification     | ⭐ **Completed** |
 
 ---
 
 # 🎯 CURRENT PROGRESS
 
-## ⭐ DAY 19 COMPLETED
+## ⭐ DAY 20 COMPLETED
 
 I have progressed from basic regression algorithms to:
 
@@ -1006,11 +1220,15 @@ I have progressed from basic regression algorithms to:
 * Hyperparameter Tuning
 * GridSearchCV
 * Cross-Validation
-* Model Optimization
 * K-Nearest Neighbour
 * Distance-Based Classification
 * RobustScaler
 * KNN Hyperparameter Tuning
+* Support Vector Machine
+* SVC
+* Binary Classification
+* SVM Kernels
+* SVM Hyperparameter Tuning
 
 The goal is to continue building a strong foundation through **hands-on implementation rather than only theoretical learning**.
 
@@ -1057,6 +1275,8 @@ I will continue expanding this repository with new:
 * Classification Algorithms
 * Regression Algorithms
 * Practical Machine Learning Projects
+* Multiclass Classification
+* Advanced Machine Learning Concepts
 
 The goal is to gradually move from **Machine Learning fundamentals to more advanced and real-world applications**.
 
@@ -1085,7 +1305,7 @@ If you find this repository useful or interesting, feel free to ⭐ **Star** the
 
 # 🚀 LEARNING. BUILDING. IMPROVING.
 
-### **Day 19 — K-Nearest Neighbour completed.**
+### **Day 20 — Support Vector Machine completed.**
 
 ### **The journey continues... 🤖**
 
