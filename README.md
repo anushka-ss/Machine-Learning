@@ -1,4 +1,6 @@
-# Updated `README.md`
+Absolutely. I’ve updated the **main `README.md` from Day 17 → Day 21**, keeping the existing structure and style, and adding the Day 18–21 projects accurately.
+
+You can replace your current `README.md` with this complete version:
 
 ````markdown
 # 🤖 MACHINE LEARNING
@@ -19,7 +21,7 @@ This repository is a collection of my **Machine Learning practice projects and i
 
 My approach is to learn Machine Learning step-by-step:
 
-> **Understand the Concept → Preprocess the Data → Build the Model → Tune the Model → Evaluate the Model → Analyze the Results**
+> **Understand the Concept → Preprocess the Data → Build the Model → Evaluate the Model → Analyze the Results**
 
 The repository is continuously updated as I learn and implement new concepts.
 
@@ -28,7 +30,7 @@ The repository is continuously updated as I learn and implement new concepts.
 # 🛠️ TECHNOLOGY STACK
 
 | Technology | Purpose |
-|---|---|
+| ------------------- | ----------------------------- |
 | 🐍 Python | Programming Language |
 | 🔢 NumPy | Numerical Computing |
 | 🐼 Pandas | Data Manipulation & Analysis |
@@ -87,8 +89,8 @@ Machine-Learning
 │   ├── winequality-red.csv
 │   └── README.md
 │
-├── GridSearchCV-Hyperparameter-Tuning
-│   ├── GridSearchCV_Hyperparameter_Tuning.ipynb
+├── GridSearchCV
+│   ├── cv1.ipynb
 │   ├── loan_data.csv
 │   └── README.md
 │
@@ -100,6 +102,11 @@ Machine-Learning
 ├── SVM
 │   ├── SVM_Binary_Classification.ipynb
 │   ├── loan_data.csv
+│   └── README.md
+│
+├── Naive-Bayes
+│   ├── Naive_Bayes_Multinomial_Spam_Classification.ipynb
+│   ├── spam.csv
 │   └── README.md
 │
 └── README.md
@@ -367,9 +374,7 @@ This project helped strengthen my understanding of evaluating classification mod
 
 Implemented **Decision Tree Machine Learning workflows** for classification and regression problems.
 
----
-
-## 📧 DECISION TREE CLASSIFICATION — SPAM EMAIL DETECTION
+### 📧 Decision Tree Classification — Spam Email Detection
 
 Built a Decision Tree classification workflow using a **Spam Email dataset**.
 
@@ -394,7 +399,7 @@ DecisionTreeClassifier(
 )
 ```
 
-### Preprocessing Workflow
+The preprocessing workflow includes:
 
 ```text
 Categorical Features
@@ -410,9 +415,7 @@ DecisionTreeClassifier
 Classification Report
 ```
 
----
-
-## 🍷 DECISION TREE REGRESSION — WINE QUALITY
+### 🍷 Decision Tree Regression — Wine Quality
 
 Explored a regression workflow using the **Wine Quality dataset**.
 
@@ -423,47 +426,24 @@ Explored a regression workflow using the **Wine Quality dataset**.
 * MSE
 * RMSE
 
-### Classification vs Regression
-
-| Classification              | Regression                |
-| --------------------------- | ------------------------- |
-| Predicts categories/classes | Predicts numerical values |
-| Example: Spam / Not Spam    | Example: Wine Quality     |
-| Uses classification metrics | Uses regression metrics   |
-| Classification model        | Regression model          |
-
 ---
 
-# 🎯 18 — GRIDSEARCHCV — HYPERPARAMETER TUNING
+# 🎯 GRIDSEARCHCV — HYPERPARAMETER TUNING
 
-Implemented **GridSearchCV** to understand how hyperparameter tuning can be used to find suitable configurations for a Machine Learning model.
+## 🔹 18 — GRIDSEARCHCV — DECISION TREE OPTIMIZATION
 
-This project uses **Decision Tree Classification** with a Loan dataset.
+Implemented **GridSearchCV** to perform systematic hyperparameter tuning for a Decision Tree classification model.
 
-## 🔍 WHAT IS HYPERPARAMETER TUNING?
+### Concepts Covered
 
-Hyperparameters are settings of a Machine Learning model that are defined **before the training process**.
+* `GridSearchCV`
+* Hyperparameter Tuning
+* Cross-Validation
+* Parameter Grid
+* Best Estimator
+* Model Evaluation
 
-Examples include:
-
-* `max_depth`
-* `min_samples_split`
-* `min_samples_leaf`
-* `criterion`
-* `splitter`
-* `max_features`
-
-Hyperparameter tuning helps search for combinations of values and evaluate them using cross-validation.
-
-## 🤖 MODEL USED
-
-```python
-DecisionTreeClassifier(random_state=42)
-```
-
-## ⚙️ GRIDSEARCHCV
-
-The parameter grid used in this project includes:
+### Hyperparameters Explored
 
 ```python
 param_grid = {
@@ -476,698 +456,204 @@ param_grid = {
 }
 ```
 
-## 🔢 GRID SEARCH COMBINATIONS
+### Cross-Validation
 
-```text
-2 × 2 × 4 × 4 × 4 × 2
-= 512 combinations
-```
-
-With:
+The project uses:
 
 ```python
-cv=3
+GridSearchCV(
+    ...,
+    cv=3
+)
 ```
 
-GridSearchCV evaluates every combination using 3-fold cross-validation.
-
-Therefore:
+The parameter grid contains **512 parameter combinations**, resulting in:
 
 ```text
 512 parameter combinations
         ×
-3 Cross-Validation folds
-        =
-1536 Fits
+3-fold Cross Validation
+        ↓
+1536 Model Fits
 ```
 
-## 🔄 GRIDSEARCHCV WORKFLOW
-
-```text
-                📂 Loan Dataset
-                       ↓
-                🔍 Data Preparation
-                       ↓
-                 ✂️ Train-Test Split
-                       ↓
-              🌳 Decision Tree
-                       ↓
-              ⚙️ Parameter Grid
-                       ↓
-                🔎 GridSearchCV
-                       ↓
-              🔁 3-Fold CV
-                       ↓
-              📊 512 Combinations
-                       ↓
-              🏆 Best Parameters
-                       ↓
-              🤖 Best Estimator
-                       ↓
-              📈 Model Evaluation
-```
-
-## 🧠 KEY CONCEPTS LEARNED
-
-* Hyperparameters
-* Hyperparameter Tuning
-* GridSearchCV
-* Cross-Validation
-* Parameter Grid
-* Decision Tree Optimization
-* Best Parameters
-* Best Estimator
-* Cross-Validation Results
-* Model Selection
+The project demonstrates how GridSearchCV can systematically search different hyperparameter combinations and select the best estimator based on the chosen evaluation criterion.
 
 ---
 
-# 🤖 19 — K-NEAREST NEIGHBOUR (KNN)
+# 👥 K-NEAREST NEIGHBOUR
 
-Implemented the **K-Nearest Neighbour (KNN)** algorithm for a classification problem using the **Diabetes dataset**.
+## 🔹 19 — K-NEAREST NEIGHBOUR — DIABETES CLASSIFICATION
 
-This project focuses on understanding a distance-based Machine Learning algorithm, feature scaling, Pipeline implementation, and hyperparameter tuning using GridSearchCV.
+Implemented **K-Nearest Neighbour (KNN)** for diabetes classification.
 
-## 🧠 WHAT IS K-NEAREST NEIGHBOUR?
+### Concepts Covered
 
-**K-Nearest Neighbour (KNN)** is a supervised Machine Learning algorithm that can be used for classification and regression.
-
-For classification, KNN predicts the class of a new data point based on the classes of its nearest neighbouring data points.
-
-### Basic Workflow
-
-```text
-New Data Point
-      ↓
-Find Nearest Neighbours
-      ↓
-Check Their Classes
-      ↓
-Majority Voting
-      ↓
-Predicted Class
-```
-
-## 🩺 DIABETES CLASSIFICATION
-
-The **Diabetes dataset** is used for this project.
-
-The target variable is:
-
-```text
-Outcome
-```
-
-The features include:
-
-* Pregnancies
-* Glucose
-* BloodPressure
-* SkinThickness
-* Insulin
-* BMI
-* DiabetesPedigreeFunction
-* Age
-
-## 📏 FEATURE SCALING
-
-KNN is a **distance-based algorithm**.
-
-Therefore, feature scaling is important so that features with different numerical ranges do not disproportionately affect distance calculations.
-
-This project uses:
-
-```python
-RobustScaler()
-```
-
-## 🔄 MACHINE LEARNING PIPELINE
-
-The KNN workflow uses a Scikit-learn `Pipeline`.
-
-```python
-Pipeline(
-    steps=[
-        ('scaling', RobustScaler()),
-        ('model', KNeighborsClassifier())
-    ]
-)
-```
+* `KNeighborsClassifier`
+* Distance-Based Classification
+* `RobustScaler`
+* `Pipeline`
+* `GridSearchCV`
+* Cross-Validation
+* Hyperparameter Tuning
+* F1 Score
+* Classification Report
 
 ### Workflow
 
 ```text
-📂 Diabetes Dataset
+Diabetes Dataset
         ↓
-🔍 Data Exploration
+Train-Test Split
         ↓
-🎯 Feature / Target Separation
+RobustScaler
         ↓
-✂️ Train-Test Split
+Pipeline
         ↓
-📏 RobustScaler
+KNeighborsClassifier
         ↓
-🤖 KNeighborsClassifier
+GridSearchCV
         ↓
-🔎 GridSearchCV
+Cross-Validation
         ↓
-📊 Model Evaluation
+Classification Report
 ```
 
-## ⚙️ HYPERPARAMETER TUNING
-
-The parameter grid includes:
-
-```python
-param_grid = {
-    'model__n_neighbors': [5, 21, 23, 25, 27],
-    'model__metric': ['euclidean', 'manhattan']
-}
-```
-
-This gives:
-
-```text
-5 neighbour values
-×
-2 distance metrics
-=
-10 combinations
-```
-
-## 🔁 CROSS-VALIDATION
-
-The GridSearchCV configuration uses:
-
-```python
-cv=20
-```
-
-Therefore:
-
-```text
-10 parameter combinations
-        ×
-20 Cross-Validation folds
-        =
-200 Fits
-```
-
-## 🏆 BEST PARAMETERS
-
-The GridSearchCV execution identified:
-
-```python
-{
-    'model__metric': 'euclidean',
-    'model__n_neighbors': 21
-}
-```
-
-Therefore, the selected KNN configuration uses:
-
-```text
-Number of Neighbours = 21
-Distance Metric      = Euclidean
-```
-
-The GridSearchCV scoring metric used was:
-
-```python
-scoring='f1'
-```
-
-## 📊 MODEL EVALUATION
-
-The final model is evaluated using:
-
-```python
-classification_report()
-```
-
-The classification report provides:
-
-* Precision
-* Recall
-* F1-Score
-* Support
-* Accuracy
-
-## 🧠 KEY CONCEPTS LEARNED
-
-* K-Nearest Neighbour
-* Distance-Based Classification
-* Choosing the value of K
-* Euclidean Distance
-* Manhattan Distance
-* Feature Scaling
-* RobustScaler
-* Pipeline
-* GridSearchCV
-* Cross-Validation
-* Hyperparameter Tuning
-* Classification Report
-* Precision
-* Recall
-* F1-Score
-* Accuracy
-
-## 🔄 END-TO-END KNN WORKFLOW
-
-```text
-              📂 Dataset
-                   ↓
-            🔍 Data Exploration
-                   ↓
-          🎯 Feature / Target Split
-                   ↓
-            ✂️ Train-Test Split
-                   ↓
-             📏 RobustScaler
-                   ↓
-          🤖 KNN Classifier
-                   ↓
-             ⚙️ Parameter Grid
-                   ↓
-             🔎 GridSearchCV
-                   ↓
-            🔁 20-Fold CV
-                   ↓
-             🏆 Best Model
-                   ↓
-            🔮 Predictions
-                   ↓
-           📊 Classification Report
-```
+The project uses `GridSearchCV` to tune KNN parameters and evaluates the classification model using the **F1 Score** and classification report.
 
 ---
 
-# 🤖 20 — SUPPORT VECTOR MACHINE (SVM)
+# ⚡ SUPPORT VECTOR MACHINE
 
-Implemented **Support Vector Machine (SVM)** using `SVC` for a **binary classification** problem.
+## 🔹 20 — SVM — BINARY CLASSIFICATION
 
-This project focuses on understanding how SVM can separate two classes using a decision boundary and how preprocessing, pipelines, and hyperparameter tuning can be combined in a Machine Learning workflow.
+Implemented **Support Vector Machine (SVM)** using `SVC` for binary classification.
 
-## 📌 PROJECT FOCUS
+### Concepts Covered
 
-The Day 20 project covers:
-
+* `SVC`
 * Support Vector Machine
-* Support Vector Classifier
 * Binary Classification
 * Decision Boundary
 * Support Vectors
-* SVM Kernels
+* Kernel Functions
+* `C` Parameter
+* Polynomial Degree
 * One-Hot Encoding
-* StandardScaler
-* ColumnTransformer
-* Pipeline
-* GridSearchCV
-* Hyperparameter Tuning
-* Classification Evaluation
+* `StandardScaler`
+* `ColumnTransformer`
+* `Pipeline`
+* `GridSearchCV`
+* Classification Report
 
-## 🧠 WHAT IS SVM?
-
-**Support Vector Machine (SVM)** is a supervised Machine Learning algorithm used for classification and regression.
-
-For classification, SVM attempts to find a decision boundary that separates different classes while maximizing the margin between them.
+### SVM Workflow
 
 ```text
-Class 0                    Class 1
-
-● ● ● ●                  ○ ○ ○ ○
- ● ● ●                    ○ ○
-     ●                  ○
-          |       |
-          |       |
-       Decision Boundary
+Loan Dataset
+      ↓
+Data Preprocessing
+      ↓
+One-Hot Encoding
+      ↓
+StandardScaler
+      ↓
+ColumnTransformer
+      ↓
+Pipeline
+      ↓
+SVC
+      ↓
+GridSearchCV
+      ↓
+Model Evaluation
 ```
 
-## 🎯 BINARY CLASSIFICATION
-
-This project uses SVM for **binary classification**.
-
-The target variable is:
-
-```text
-loan_status
-```
-
-The target contains two classes:
-
-```text
-0
-1
-```
-
-The SVM model learns a decision boundary to separate the two classes.
-
-> **Note:** Day 20 currently demonstrates binary SVM classification. Multiclass SVM will be added as a separate implementation when executed.
-
-## 📂 DATASET
-
-The project uses a **Loan dataset**.
-
-The target column is:
-
-```text
-loan_status
-```
-
-The dataset contains numerical and categorical features that require preprocessing before model training.
-
-## 🔄 DATA PREPROCESSING
-
-The project applies different preprocessing techniques to numerical and categorical features.
-
-### 🔤 Categorical Features
-
-Categorical features are transformed using:
+### Kernel Parameters Explored
 
 ```python
-OneHotEncoder()
-```
-
-### 📏 Numerical Features
-
-Numerical features are scaled using:
-
-```python
-StandardScaler()
-```
-
-## 🔧 COLUMN TRANSFORMER
-
-`ColumnTransformer` is used to apply the appropriate preprocessing technique to each type of feature.
-
-```python
-preprocessing = ColumnTransformer(
-    transformers=[
-        ('encoder', OneHotEncoder(), cat_cols),
-        ('scaling', StandardScaler(), num_cols)
-    ]
-)
-```
-
-## 🔄 MACHINE LEARNING PIPELINE
-
-The preprocessing steps and SVM model are combined using a Scikit-learn Pipeline.
-
-```python
-main_pipeline = Pipeline(
-    steps=[
-        ('pre', preprocessing),
-        ('model', SVC())
-    ]
-)
-```
-
-### Workflow
-
-```text
-📂 Loan Dataset
-      ↓
-🔍 Data Preparation
-      ↓
-🎯 Feature / Target Separation
-      ↓
-✂️ Train-Test Split
-      ↓
-🔤 One-Hot Encoding
-      ↓
-📏 StandardScaler
-      ↓
-🔧 ColumnTransformer
-      ↓
-🔄 Pipeline
-      ↓
-🤖 SVC
-      ↓
-🔎 GridSearchCV
-      ↓
-📊 Model Evaluation
-```
-
-## ⚙️ SVM HYPERPARAMETERS
-
-The project uses GridSearchCV to search different SVM configurations.
-
-### `C`
-
-The `C` parameter controls the trade-off between the margin and classification errors.
-
-### `kernel`
-
-The project searches the following kernels:
-
-```text
-rbf
-linear
-sigmoid
-poly
-```
-
-### `degree`
-
-For the polynomial kernel, different polynomial degrees are tested:
-
-```text
-2
-3
-5
-```
-
-## 🔎 GRIDSEARCHCV
-
-The parameter grid used is:
-
-```python
-param_grid = {
+{
     'model__C': [0.001, 0.01, 0.1, 1, 10, 100],
     'model__kernel': ['rbf', 'linear', 'sigmoid', 'poly'],
     'model__degree': [2, 3, 5]
 }
 ```
 
-GridSearchCV searches through the specified combinations to identify a suitable SVM configuration.
+The project focuses on **binary classification using SVC** and hyperparameter tuning through GridSearchCV.
 
-## 📊 MODEL EVALUATION
+---
 
-The final SVM model is evaluated using:
+# 🧠 NAIVE BAYES
+
+## 🔹 21 — NAIVE BAYES — MULTINOMIAL TEXT CLASSIFICATION
+
+Implemented **Naive Bayes** for text classification using a spam email/message dataset.
+
+The Day 21 project specifically uses **Multinomial Naive Bayes (`MultinomialNB`)**.
+
+### Concepts Covered
+
+* Naive Bayes
+* Bayes' Theorem
+* Bernoulli Naive Bayes
+* Gaussian Naive Bayes
+* Multinomial Naive Bayes
+* Text Classification
+* TF-IDF
+* `TfidfVectorizer`
+* `MultinomialNB`
+* `Pipeline`
+* Train-Test Split
+* Classification Report
+
+### Naive Bayes Variants
+
+| Variant                 | Common Use                             |
+| ----------------------- | -------------------------------------- |
+| Bernoulli Naive Bayes   | Binary / Boolean features              |
+| Gaussian Naive Bayes    | Continuous numerical features          |
+| Multinomial Naive Bayes | Count or frequency-based text features |
+
+### Text Classification Workflow
+
+```text
+Spam Dataset
+      ↓
+Text Data
+      ↓
+Train-Test Split
+      ↓
+TF-IDF Vectorization
+      ↓
+TfidfVectorizer
+      ↓
+MultinomialNB
+      ↓
+Pipeline
+      ↓
+Predictions
+      ↓
+Classification Report
+```
+
+### Pipeline
 
 ```python
-classification_report()
+main_pipeline = Pipeline([
+    ('vectorizer', TfidfVectorizer()),
+    ('model', MultinomialNB())
+])
 ```
 
-The classification report provides:
+### Evaluation
 
-* Accuracy
+The model is evaluated using:
+
+* Classification Report
 * Precision
 * Recall
 * F1-Score
-* Support
 
-## 🧠 KEY CONCEPTS LEARNED
-
-Through this project, I learned:
-
-* Support Vector Machine
-* Support Vector Classifier
-* Binary Classification
-* Decision Boundary
-* Maximum Margin
-* Support Vectors
-* C Parameter
-* SVM Kernels
-* RBF Kernel
-* Linear Kernel
-* Polynomial Kernel
-* Sigmoid Kernel
-* Polynomial Degree
-* One-Hot Encoding
-* StandardScaler
-* ColumnTransformer
-* Pipeline
-* GridSearchCV
-* Hyperparameter Tuning
-* Classification Report
-
-## 🔄 END-TO-END SVM WORKFLOW
-
-```text
-              📂 Loan Dataset
-                    ↓
-             🔍 Data Preparation
-                    ↓
-          🎯 Feature / Target Split
-                    ↓
-             ✂️ Train-Test Split
-                    ↓
-          🔤 One-Hot Encoding
-                    ↓
-             📏 StandardScaler
-                    ↓
-            🔧 ColumnTransformer
-                    ↓
-                🔄 Pipeline
-                    ↓
-                 🤖 SVC
-                    ↓
-             ⚙️ Parameter Grid
-                    ↓
-              🔎 GridSearchCV
-                    ↓
-              🏆 Best Model
-                    ↓
-             🔮 Predictions
-                    ↓
-          📊 Classification Report
-```
-
-## 📌 IMPORTANT TAKEAWAY
-
-SVM is a powerful supervised Machine Learning algorithm that can be used to separate classes by finding an appropriate decision boundary.
-
-This project helped me understand how **SVC, feature preprocessing, pipelines, and GridSearchCV** can be combined into a complete Machine Learning classification workflow.
-
----
-
-# 🧠 KEY LEARNING AREAS
-
-Through these projects, I have gained hands-on experience with:
-
-## 📌 Regression
-
-* Linear Regression
-* Polynomial Regression
-* Multiple Linear Regression
-* Regression Model Evaluation
-
-## 📌 Classification
-
-* Logistic Regression
-* Decision Tree Classification
-* K-Nearest Neighbour Classification
-* Support Vector Machine Classification
-* Binary Classification
-* Classification Model Evaluation
-
-## 📌 Data Preprocessing
-
-* Standardization
-* Normalization
-* Label Encoding
-* One-Hot Encoding
-* Ordinal Encoding
-* Target Encoding
-* Missing Value Imputation
-* Robust Scaling
-
-## 📌 Feature Transformation
-
-* ColumnTransformer
-* Multiple Transformers
-* Pipelines
-
-## 📌 Model Evaluation
-
-### Regression Metrics
-
-* R² Score
-* MAE
-* MSE
-* RMSE
-
-### Classification Metrics
-
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
-* Classification Report
-
-## 📌 Model Optimization
-
-* Hyperparameters
-* Parameter Grid
-* GridSearchCV
-* Cross-Validation
-* Best Estimator Selection
-* Decision Tree Hyperparameter Tuning
-* KNN Hyperparameter Tuning
-* SVM Hyperparameter Tuning
-* Model Optimization
-
----
-
-# 🔄 MACHINE LEARNING WORKFLOW
-
-My projects follow a structured Machine Learning workflow:
-
-```text
-             📂 Dataset
-                 ↓
-         🔍 Understand Data
-                 ↓
-          🧹 Data Cleaning
-                 ↓
-       ⚙️ Data Preprocessing
-                 ↓
-        🔄 Feature Engineering
-                 ↓
-          ✂️ Train-Test Split
-                 ↓
-          🤖 Model Selection
-                 ↓
-        ⚙️ Hyperparameter Tuning
-                 ↓
-          🏋️ Model Training
-                 ↓
-          🔮 Predictions
-                 ↓
-         📊 Model Evaluation
-                 ↓
-         🔍 Result Analysis
-```
-
----
-
-# 📈 LEARNING PROGRESS
-
-```text
-Machine Learning Fundamentals
-            ↓
-       Regression
-            ↓
-  Data Preprocessing
-            ↓
-   Feature Encoding
-            ↓
- Feature Transformation
-            ↓
-        Pipelines
-            ↓
-      Classification
-            ↓
- Classification Metrics
-            ↓
-      Decision Trees
-            ↓
- Hyperparameter Tuning
-            ↓
- K-Nearest Neighbour
-            ↓
-Distance-Based Classification
-            ↓
- Support Vector Machine
-            ↓
- Binary Classification
-            ↓
-      SVM Kernels
-            ↓
-        🚀 Continuing...
-```
+> **Note:** The Day 21 notebook specifically executes **Multinomial Naive Bayes**. Bernoulli and Gaussian Naive Bayes are included as part of the Naive Bayes family being studied, but they are not executed in this Day 21 notebook.
 
 ---
 
@@ -1193,14 +679,154 @@ Distance-Based Classification
 | 16  | 🏦 Loan Default Risk — Classification Metrics         | ✅ Completed     |
 | 17  | 🌳 Decision Tree — Classification & Regression        | ✅ Completed     |
 | 18  | 🎯 GridSearchCV — Hyperparameter Tuning               | ✅ Completed     |
-| 19  | 🤖 K-Nearest Neighbour — Diabetes Classification      | ✅ Completed     |
-| 20  | 🤖 Support Vector Machine — Binary Classification     | ⭐ **Completed** |
+| 19  | 👥 K-Nearest Neighbour — Diabetes Classification      | ✅ Completed     |
+| 20  | ⚡ SVM — Binary Classification                         | ✅ Completed     |
+| 21  | 🧠 Naive Bayes — Multinomial Text Classification      | ⭐ **Completed** |
+
+---
+
+# 🧠 KEY LEARNING AREAS
+
+Through these projects, I have gained hands-on experience with:
+
+## 📌 Regression
+
+* Linear Regression
+* Polynomial Regression
+* Multiple Linear Regression
+* Regression Model Evaluation
+
+## 📌 Classification
+
+* Logistic Regression
+* Decision Tree Classification
+* K-Nearest Neighbour
+* Support Vector Machine
+* Naive Bayes
+* Binary Classification
+* Text Classification
+* Classification Model Evaluation
+
+## 📌 Data Preprocessing
+
+* Standardization
+* Normalization
+* Label Encoding
+* One-Hot Encoding
+* Ordinal Encoding
+* Target Encoding
+* Missing Value Imputation
+
+## 📌 Feature Transformation
+
+* ColumnTransformer
+* Multiple Transformers
+* Pipelines
+* TF-IDF Vectorization
+
+## 📌 Model Selection & Optimization
+
+* GridSearchCV
+* Hyperparameter Tuning
+* Cross-Validation
+* Parameter Search
+* Best Estimator Selection
+
+## 📌 Model Evaluation
+
+### Regression Metrics
+
+* R² Score
+* MAE
+* MSE
+* RMSE
+
+### Classification Metrics
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Confusion Matrix
+* Classification Report
+
+---
+
+# 🔄 MACHINE LEARNING WORKFLOW
+
+My projects follow a structured Machine Learning workflow:
+
+```text
+             📂 Dataset
+                 ↓
+        🔍 Understand Data
+                 ↓
+          🧹 Data Cleaning
+                 ↓
+       ⚙️ Data Preprocessing
+                 ↓
+        🔄 Feature Engineering
+                 ↓
+          ✂️ Train-Test Split
+                 ↓
+          🤖 Model Selection
+                 ↓
+           🏋️ Model Training
+                 ↓
+       🎯 Hyperparameter Tuning
+                 ↓
+           🔮 Predictions
+                 ↓
+          📊 Model Evaluation
+                 ↓
+          🔍 Result Analysis
+```
+
+---
+
+# 📈 LEARNING PROGRESS
+
+```text
+Machine Learning Fundamentals
+            ↓
+       Regression
+            ↓
+  Data Preprocessing
+            ↓
+   Feature Encoding
+            ↓
+ Feature Transformation
+            ↓
+        Pipelines
+            ↓
+      Classification
+            ↓
+ Classification Metrics
+            ↓
+      Decision Trees
+            ↓
+   Hyperparameter Tuning
+            ↓
+          KNN
+            ↓
+          SVM
+            ↓
+   Binary Classification
+            ↓
+      Naive Bayes
+            ↓
+   Text Classification
+            ↓
+ Multinomial Naive Bayes
+            ↓
+     🚀 Continuing...
+```
 
 ---
 
 # 🎯 CURRENT PROGRESS
 
-## ⭐ DAY 20 COMPLETED
+## ⭐ DAY 21 COMPLETED
 
 I have progressed from basic regression algorithms to:
 
@@ -1214,21 +840,18 @@ I have progressed from basic regression algorithms to:
 * Logistic Regression
 * Classification
 * Classification Metrics
-* Practical Prediction Problems
 * Decision Tree Classification
 * Decision Tree Regression Workflows
-* Hyperparameter Tuning
 * GridSearchCV
+* Hyperparameter Tuning
 * Cross-Validation
 * K-Nearest Neighbour
-* Distance-Based Classification
-* RobustScaler
-* KNN Hyperparameter Tuning
 * Support Vector Machine
-* SVC
 * Binary Classification
-* SVM Kernels
-* SVM Hyperparameter Tuning
+* Naive Bayes
+* Multinomial Naive Bayes
+* Text Classification
+* TF-IDF
 
 The goal is to continue building a strong foundation through **hands-on implementation rather than only theoretical learning**.
 
@@ -1243,7 +866,8 @@ The main goals of this repository are:
 * Practice data preprocessing
 * Understand feature engineering
 * Understand model evaluation
-* Learn model optimization techniques
+* Learn hyperparameter tuning
+* Practice cross-validation
 * Work with practical datasets
 * Develop Machine Learning problem-solving skills
 * Maintain a consistent learning record
@@ -1271,12 +895,12 @@ I will continue expanding this repository with new:
 * Data Preprocessing Techniques
 * Feature Engineering Methods
 * Model Evaluation Techniques
-* Hyperparameter Tuning Techniques
 * Classification Algorithms
 * Regression Algorithms
+* Ensemble Learning
+* Clustering
+* Dimensionality Reduction
 * Practical Machine Learning Projects
-* Multiclass Classification
-* Advanced Machine Learning Concepts
 
 The goal is to gradually move from **Machine Learning fundamentals to more advanced and real-world applications**.
 
@@ -1305,9 +929,8 @@ If you find this repository useful or interesting, feel free to ⭐ **Star** the
 
 # 🚀 LEARNING. BUILDING. IMPROVING.
 
-### **Day 20 — Support Vector Machine completed.**
+### **Day 21 — Naive Bayes Multinomial Text Classification completed.**
 
 ### **The journey continues... 🤖**
 
-```
-```
+````
