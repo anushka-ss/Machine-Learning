@@ -1,8 +1,3 @@
-Absolutely. I’ve updated the **main `README.md` from Day 17 → Day 21**, keeping the existing structure and style, and adding the Day 18–21 projects accurately.
-
-You can replace your current `README.md` with this complete version:
-
-````markdown
 # 🤖 MACHINE LEARNING
 
 ### 🚀 A Hands-On Journey from Fundamentals to Practical Machine Learning
