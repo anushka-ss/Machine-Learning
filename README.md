@@ -104,6 +104,11 @@ Machine-Learning
 │   ├── spam.csv
 │   └── README.md
 │
+├── Vectorization
+│   ├── Vectorization_CountVectorizer_TFIDF.ipynb
+│   ├── spam.csv
+│   └── README.md
+│
 └── README.md
 ````
 
@@ -652,6 +657,113 @@ The model is evaluated using:
 
 ---
 
+
+# 🔤 VECTORIZATION
+
+## 🔹 22 — VECTORIZATION — COUNTVECTORIZER & TF-IDF VECTORIZER
+
+Implemented **Text Vectorization** techniques to convert text data into numerical features that Machine Learning models can process.
+
+The Day 22 project focuses on:
+
+* `CountVectorizer`
+* `TfidfVectorizer`
+* N-grams
+* Stop Words
+* Text Feature Extraction
+* Sparse Matrix Representation
+* Numerical Representation of Text
+
+### 📊 CountVectorizer
+
+`CountVectorizer` converts text documents into numerical features based on the occurrence of words or n-grams.
+
+### Implementation
+
+```python
+vectorizer = CountVectorizer(
+    stop_words='english',
+    binary=True,
+    min_df=1,
+    max_df=1.0,
+    max_features=100,
+    ngram_range=(2,2)
+)
+
+vectors = vectorizer.fit_transform(xtrain['v2'])
+```
+
+### 📈 TF-IDF Vectorizer
+
+TF-IDF stands for **Term Frequency — Inverse Document Frequency**.
+
+`TfidfVectorizer` represents text numerically while assigning weights based on the importance of terms across documents.
+
+### Implementation
+
+```python
+tfidf_vectorizer = TfidfVectorizer(
+    stop_words='english',
+    max_features=100,
+    ngram_range=(2,2)
+)
+
+tfidf_vectors = tfidf_vectorizer.fit_transform(xtrain['v2'])
+```
+
+### 🔄 Vectorization Workflow
+
+```text
+Raw Text
+   ↓
+Text Preprocessing
+   ↓
+Vectorization
+   ↓
+Numerical Features
+   ↓
+Machine Learning Model
+```
+
+### ⚖️ CountVectorizer vs TF-IDF
+
+| CountVectorizer | TF-IDF |
+|---|---|
+| Represents word/ngram counts | Represents weighted term importance |
+| Can use binary features | Produces weighted numerical values |
+| Simple frequency-based representation | Reduces the influence of very common terms |
+| Useful for basic text representation | Commonly used for text classification |
+
+### 📂 Dataset
+
+The project uses a **spam message dataset**.
+
+* `v1` → Message label
+* `v2` → Message text
+
+The `v2` text column is converted into numerical features using vectorization techniques.
+
+### 🛠️ Technologies Used
+
+* Python
+* Pandas
+* Scikit-learn
+* Jupyter Notebook
+
+### 🎯 Learning Outcome
+
+Through this project, I learned how to:
+
+* Convert text into numerical features
+* Use CountVectorizer
+* Use TF-IDF Vectorizer
+* Generate n-gram features
+* Remove stop words
+* Work with sparse matrices
+* Prepare text data for Machine Learning
+
+---
+
 # 🗺️ MY MACHINE LEARNING JOURNEY
 
 | Day | Topic                                                 | Status          |
@@ -677,6 +789,7 @@ The model is evaluated using:
 | 19  | 👥 K-Nearest Neighbour — Diabetes Classification      | ✅ Completed     |
 | 20  | ⚡ SVM — Binary Classification                         | ✅ Completed     |
 | 21  | 🧠 Naive Bayes — Multinomial Text Classification      | ⭐ **Completed** |
+| 22  | 🔤 Vectorization — CountVectorizer & TF-IDF Vectorizer | ⭐ **Completed** |
 
 ---
 
@@ -717,6 +830,12 @@ Through these projects, I have gained hands-on experience with:
 * ColumnTransformer
 * Multiple Transformers
 * Pipelines
+* Text Vectorization
+* CountVectorizer
+* TF-IDF Vectorizer
+* N-grams
+* Stop Words
+* Text Feature Extraction
 * TF-IDF Vectorization
 
 ## 📌 Model Selection & Optimization
@@ -821,7 +940,7 @@ Machine Learning Fundamentals
 
 # 🎯 CURRENT PROGRESS
 
-## ⭐ DAY 21 COMPLETED
+## ⭐ DAY 22 COMPLETED
 
 I have progressed from basic regression algorithms to:
 
@@ -846,7 +965,12 @@ I have progressed from basic regression algorithms to:
 * Naive Bayes
 * Multinomial Naive Bayes
 * Text Classification
-* TF-IDF
+* Text Vectorization
+* CountVectorizer
+* TF-IDF Vectorizer
+* N-grams
+* Stop Words
+* Text Feature Extraction
 
 The goal is to continue building a strong foundation through **hands-on implementation rather than only theoretical learning**.
 
@@ -924,7 +1048,7 @@ If you find this repository useful or interesting, feel free to ⭐ **Star** the
 
 # 🚀 LEARNING. BUILDING. IMPROVING.
 
-### **Day 21 — Naive Bayes Multinomial Text Classification completed.**
+### **Day 22 — Vectorization with CountVectorizer & TF-IDF Vectorizer completed.**
 
 ### **The journey continues... 🤖**
 
