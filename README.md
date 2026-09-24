@@ -1,45 +1,63 @@
-# 🤖 MACHINE LEARNING
+🤖 MACHINE LEARNING
 
-### 🚀 A Hands-On Journey from Fundamentals to Practical Machine Learning
+🚀 A Hands-On Journey from Fundamentals to Practical Machine Learning
 
-Welcome to my **Machine Learning journey**!
+Welcome to my Machine Learning journey!
 
-This repository documents my hands-on learning experience with **Machine Learning algorithms, data preprocessing techniques, feature engineering, model evaluation, hyperparameter tuning, and practical ML workflows**.
+This repository documents my hands-on learning experience with Machine Learning algorithms, data preprocessing techniques, feature engineering, model evaluation, hyperparameter tuning, and practical ML workflows.
 
-Each project focuses on understanding concepts practically by implementing them using **Python, Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn**.
+Each project focuses on understanding concepts practically by implementing them using Python, Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.
 
----
+📌 ABOUT THIS REPOSITORY
 
-# 📌 ABOUT THIS REPOSITORY
-
-This repository is a collection of my **Machine Learning practice projects and implementations**.
+This repository is a collection of my Machine Learning practice projects and implementations.
 
 My approach is to learn Machine Learning step-by-step:
 
-> **Understand the Concept → Preprocess the Data → Build the Model → Evaluate the Model → Analyze the Results**
+Understand the Concept → Preprocess the Data → Build the Model → Evaluate the Model → Analyze the Results
 
 The repository is continuously updated as I learn and implement new concepts.
 
----
+🛠️ TECHNOLOGY STACK
 
-# 🛠️ TECHNOLOGY STACK
+Technology
 
-| Technology | Purpose |
-| ------------------- | ----------------------------- |
-| 🐍 Python | Programming Language |
-| 🔢 NumPy | Numerical Computing |
-| 🐼 Pandas | Data Manipulation & Analysis |
-| 📊 Matplotlib | Data Visualization |
-| 📈 Seaborn | Statistical Visualization |
-| 🤖 Scikit-learn | Machine Learning |
-| 📓 Jupyter Notebook | Development & Experimentation |
-| 🔧 Git & GitHub | Version Control & Portfolio |
+Purpose
 
----
+🐍 Python
 
-# 📂 REPOSITORY STRUCTURE
+Programming Language
 
-```text
+🔢 NumPy
+
+Numerical Computing
+
+🐼 Pandas
+
+Data Manipulation & Analysis
+
+📊 Matplotlib
+
+Data Visualization
+
+📈 Seaborn
+
+Statistical Visualization
+
+🤖 Scikit-learn
+
+Machine Learning
+
+📓 Jupyter Notebook
+
+Development & Experimentation
+
+🔧 Git & GitHub
+
+Version Control & Portfolio
+
+📂 REPOSITORY STRUCTURE
+
 Machine-Learning
 │
 ├── Linear-Regression
@@ -114,299 +132,337 @@ Machine-Learning
 │   ├── Mall_Customers.csv
 │   └── README.md
 │
+├── Imbalanced-Dataset
+│   ├── Imbalanced_Dataset.ipynb
+│   ├── spam.csv
+│   └── README.md
+│
 └── README.md
-````
 
----
+📚 MACHINE LEARNING PROJECTS
 
-# 📚 MACHINE LEARNING PROJECTS
+📈 01 — LINEAR REGRESSION
 
-## 📈 01 — LINEAR REGRESSION
+Implemented the fundamentals of Linear Regression to understand the relationship between independent and dependent variables.
 
-Implemented the fundamentals of **Linear Regression** to understand the relationship between independent and dependent variables.
+Concepts Covered
 
-### Concepts Covered
+Simple Linear Regression
 
-* Simple Linear Regression
-* Independent and Dependent Variables
-* Train-Test Split
-* Model Training
-* Predictions
-* Model Evaluation
-* R² Score
+Independent and Dependent Variables
 
----
+Train-Test Split
 
-## 📊 02 — POLYNOMIAL REGRESSION
+Model Training
 
-Explored **Polynomial Regression** to understand how Machine Learning models can capture non-linear relationships.
+Predictions
 
-### Concepts Covered
+Model Evaluation
 
-* Polynomial Features
-* Different Polynomial Degrees
-* Model Training
-* Predictions
-* Train vs Test Performance
-* Underfitting
-* Overfitting
-* R² Score
+R² Score
 
----
+📊 02 — POLYNOMIAL REGRESSION
 
-## 📈 03 — MULTIPLE LINEAR REGRESSION
+Explored Polynomial Regression to understand how Machine Learning models can capture non-linear relationships.
 
-Implemented **Multiple Linear Regression** using multiple independent variables to predict a target variable.
+Concepts Covered
 
-### Concepts Covered
+Polynomial Features
 
-* Multiple Features
-* Train-Test Split
-* Model Training
-* Prediction
-* Model Evaluation
-* R² Score
+Different Polynomial Degrees
 
----
+Model Training
 
-# ⚙️ DATA PREPROCESSING
+Predictions
+
+Train vs Test Performance
+
+Underfitting
+
+Overfitting
+
+R² Score
+
+📈 03 — MULTIPLE LINEAR REGRESSION
+
+Implemented Multiple Linear Regression using multiple independent variables to predict a target variable.
+
+Concepts Covered
+
+Multiple Features
+
+Train-Test Split
+
+Model Training
+
+Prediction
+
+Model Evaluation
+
+R² Score
+
+⚙️ DATA PREPROCESSING
 
 Machine Learning models require properly prepared data.
 
 The following preprocessing techniques have been implemented:
 
----
+🔹 04 — STANDARD SCALER
 
-## 🔹 04 — STANDARD SCALER
+Implemented feature scaling using Standardization with StandardScaler.
 
-Implemented feature scaling using **Standardization** with `StandardScaler`.
+Concepts Covered
 
-### Concepts Covered
+Feature Scaling
 
-* Feature Scaling
-* Standardization
-* Mean
-* Standard Deviation
-* Transformation of Numerical Features
+Standardization
 
----
+Mean
 
-## 🔹 05 — MINMAX SCALER
+Standard Deviation
 
-Implemented feature scaling using **Min-Max Normalization** with `MinMaxScaler`.
+Transformation of Numerical Features
 
-### Concepts Covered
+🔹 05 — MINMAX SCALER
 
-* Feature Scaling
-* Normalization
-* Minimum and Maximum Values
-* Transformation of Numerical Features
+Implemented feature scaling using Min-Max Normalization with MinMaxScaler.
 
----
+Concepts Covered
 
-## 🔹 06 — LABEL ENCODING
+Feature Scaling
 
-Implemented **Label Encoding** to convert categorical labels into numerical values.
+Normalization
 
-### Concepts Covered
+Minimum and Maximum Values
 
-* Categorical Data
-* Numerical Representation
-* `LabelEncoder`
-* Encoding Categories
+Transformation of Numerical Features
 
----
+🔹 06 — LABEL ENCODING
 
-## 🔹 07 — ONE-HOT ENCODING
+Implemented Label Encoding to convert categorical labels into numerical values.
 
-Implemented **One-Hot Encoding** to convert categorical variables into binary indicator columns.
+Concepts Covered
 
-### Concepts Covered
+Categorical Data
 
-* Categorical Features
-* Dummy Variables
-* `OneHotEncoder`
-* Handling Multiple Categories
+Numerical Representation
 
----
+LabelEncoder
 
-## 🔹 08 — ORDINAL ENCODING
+Encoding Categories
 
-Implemented **Ordinal Encoding** for categorical variables where the categories have a meaningful order.
+🔹 07 — ONE-HOT ENCODING
 
-### Concepts Covered
+Implemented One-Hot Encoding to convert categorical variables into binary indicator columns.
 
-* Ordered Categories
-* `OrdinalEncoder`
-* Mapping Categories to Numerical Values
+Concepts Covered
 
----
+Categorical Features
 
-## 🔹 09 — TARGET ENCODING
+Dummy Variables
 
-Explored **Target Encoding**, where categorical variables are represented using information derived from the target variable.
+OneHotEncoder
 
-### Concepts Covered
+Handling Multiple Categories
 
-* Categorical Variables
-* Target-Based Encoding
-* Numerical Representation of Categories
+🔹 08 — ORDINAL ENCODING
 
----
+Implemented Ordinal Encoding for categorical variables where the categories have a meaningful order.
 
-# 🔧 COLUMN TRANSFORMER & PIPELINES
+Concepts Covered
 
-## 🔹 10 — COLUMN TRANSFORMER
+Ordered Categories
 
-Learned how to apply different preprocessing techniques to different columns within a dataset using `ColumnTransformer`.
+OrdinalEncoder
 
-### Concepts Covered
+Mapping Categories to Numerical Values
 
-* ColumnTransformer
-* Numerical Feature Transformation
-* Categorical Feature Transformation
-* Multiple Preprocessing Steps
+🔹 09 — TARGET ENCODING
 
----
+Explored Target Encoding, where categorical variables are represented using information derived from the target variable.
 
-## 🔹 11 — COLUMN TRANSFORMER — MULTIPLE TRANSFORMERS
+Concepts Covered
+
+Categorical Variables
+
+Target-Based Encoding
+
+Numerical Representation of Categories
+
+🔧 COLUMN TRANSFORMER & PIPELINES
+
+🔹 10 — COLUMN TRANSFORMER
+
+Learned how to apply different preprocessing techniques to different columns within a dataset using ColumnTransformer.
+
+Concepts Covered
+
+ColumnTransformer
+
+Numerical Feature Transformation
+
+Categorical Feature Transformation
+
+Multiple Preprocessing Steps
+
+🔹 11 — COLUMN TRANSFORMER — MULTIPLE TRANSFORMERS
 
 Implemented multiple preprocessing transformations together for handling different types of features.
 
-### Concepts Covered
+Concepts Covered
 
-* Multiple Transformers
-* Numerical Preprocessing
-* Categorical Preprocessing
-* ColumnTransformer
-* Efficient Data Preparation
+Multiple Transformers
 
----
+Numerical Preprocessing
 
-## 🔹 12 — PIPELINE WITH COLUMNTRANSFORMER & LOGISTIC REGRESSION
+Categorical Preprocessing
+
+ColumnTransformer
+
+Efficient Data Preparation
+
+🔹 12 — PIPELINE WITH COLUMNTRANSFORMER & LOGISTIC REGRESSION
 
 Combined preprocessing and Machine Learning into a single workflow using:
 
-* `Pipeline`
-* `ColumnTransformer`
-* `LogisticRegression`
+Pipeline
 
-This project helped understand how to build a **clean and organized Machine Learning workflow**.
+ColumnTransformer
 
----
+LogisticRegression
 
-# 🧹 MISSING VALUE HANDLING
+This project helped understand how to build a clean and organized Machine Learning workflow.
 
-## 🔹 13 — MISSING VALUE IMPUTATION
+🧹 MISSING VALUE HANDLING
+
+🔹 13 — MISSING VALUE IMPUTATION
 
 Implemented missing-value handling using:
 
-### `SimpleImputer`
+SimpleImputer
 
 Learned how missing values can be replaced using appropriate statistical strategies before training a Machine Learning model.
 
-### Concepts Covered
+Concepts Covered
 
-* Missing Data
-* Data Cleaning
-* SimpleImputer
-* Mean Imputation
-* Median Imputation
-* Handling Missing Values Before Model Training
+Missing Data
 
----
+Data Cleaning
 
-# 🏦 CLASSIFICATION PROJECTS
+SimpleImputer
 
-## 🔹 14 — LOGISTIC REGRESSION — LOAN APPROVAL PREDICTION
+Mean Imputation
 
-Implemented **Logistic Regression** for predicting loan approval.
+Median Imputation
 
-### Concepts Covered
+Handling Missing Values Before Model Training
 
-* Binary Classification
-* Logistic Regression
-* Feature Preprocessing
-* Train-Test Split
-* Model Training
-* Predictions
-* Classification Evaluation
+🏦 CLASSIFICATION PROJECTS
 
----
+🔹 14 — LOGISTIC REGRESSION — LOAN APPROVAL PREDICTION
 
-# 📊 CLASSIFICATION METRICS
+Implemented Logistic Regression for predicting loan approval.
 
-## 🔹 15 — CLASSIFICATION METRICS — LOAN DATA
+Concepts Covered
+
+Binary Classification
+
+Logistic Regression
+
+Feature Preprocessing
+
+Train-Test Split
+
+Model Training
+
+Predictions
+
+Classification Evaluation
+
+📊 CLASSIFICATION METRICS
+
+🔹 15 — CLASSIFICATION METRICS — LOAN DATA
 
 Explored important classification evaluation metrics to understand how well a classification model performs.
 
-### Metrics Covered
+Metrics Covered
 
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
-* Classification Report
+Accuracy
 
-Understanding different metrics is important because **accuracy alone may not always provide a complete picture of model performance**.
+Precision
 
----
+Recall
 
-# 🏦 LOAN DEFAULT RISK
+F1-Score
 
-## 🔹 16 — LOAN DEFAULT RISK — CLASSIFICATION METRICS
+Confusion Matrix
 
-Applied classification evaluation techniques to a **Loan Default Risk** dataset.
+Classification Report
 
-### Focus Areas
+Understanding different metrics is important because accuracy alone may not always provide a complete picture of model performance.
 
-* Classification Model Evaluation
-* Confusion Matrix
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* Classification Report
+🏦 LOAN DEFAULT RISK
+
+🔹 16 — LOAN DEFAULT RISK — CLASSIFICATION METRICS
+
+Applied classification evaluation techniques to a Loan Default Risk dataset.
+
+Focus Areas
+
+Classification Model Evaluation
+
+Confusion Matrix
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-Score
+
+Classification Report
 
 This project helped strengthen my understanding of evaluating classification models in a practical Machine Learning problem.
 
----
+🌳 DECISION TREE
 
-# 🌳 DECISION TREE
+🔹 17 — DECISION TREE — CLASSIFICATION & REGRESSION
 
-## 🔹 17 — DECISION TREE — CLASSIFICATION & REGRESSION
+Implemented Decision Tree Machine Learning workflows for classification and regression problems.
 
-Implemented **Decision Tree Machine Learning workflows** for classification and regression problems.
+📧 Decision Tree Classification — Spam Email Detection
 
-### 📧 Decision Tree Classification — Spam Email Detection
+Built a Decision Tree classification workflow using a Spam Email dataset.
 
-Built a Decision Tree classification workflow using a **Spam Email dataset**.
+Concepts Covered
 
-### Concepts Covered
+DecisionTreeClassifier
 
-* `DecisionTreeClassifier`
-* Entropy
-* Maximum Tree Depth
-* One-Hot Encoding
-* `ColumnTransformer`
-* `Pipeline`
-* Classification Report
-* Model Evaluation
+Entropy
 
-### Model Configuration
+Maximum Tree Depth
 
-```python
+One-Hot Encoding
+
+ColumnTransformer
+
+Pipeline
+
+Classification Report
+
+Model Evaluation
+
+Model Configuration
+
 DecisionTreeClassifier(
     random_state=42,
     criterion='entropy',
     max_depth=4
 )
-```
 
 The preprocessing workflow includes:
 
-```text
 Categorical Features
         ↓
 One-Hot Encoding
@@ -418,39 +474,43 @@ Pipeline
 DecisionTreeClassifier
         ↓
 Classification Report
-```
 
-### 🍷 Decision Tree Regression — Wine Quality
+🍷 Decision Tree Regression — Wine Quality
 
-Explored a regression workflow using the **Wine Quality dataset**.
+Explored a regression workflow using the Wine Quality dataset.
 
-### Regression Evaluation Metrics
+Regression Evaluation Metrics
 
-* R² Score
-* MAE
-* MSE
-* RMSE
+R² Score
 
----
+MAE
 
-# 🎯 GRIDSEARCHCV — HYPERPARAMETER TUNING
+MSE
 
-## 🔹 18 — GRIDSEARCHCV — DECISION TREE OPTIMIZATION
+RMSE
 
-Implemented **GridSearchCV** to perform systematic hyperparameter tuning for a Decision Tree classification model.
+🎯 GRIDSEARCHCV — HYPERPARAMETER TUNING
 
-### Concepts Covered
+🔹 18 — GRIDSEARCHCV — DECISION TREE OPTIMIZATION
 
-* `GridSearchCV`
-* Hyperparameter Tuning
-* Cross-Validation
-* Parameter Grid
-* Best Estimator
-* Model Evaluation
+Implemented GridSearchCV to perform systematic hyperparameter tuning for a Decision Tree classification model.
 
-### Hyperparameters Explored
+Concepts Covered
 
-```python
+GridSearchCV
+
+Hyperparameter Tuning
+
+Cross-Validation
+
+Parameter Grid
+
+Best Estimator
+
+Model Evaluation
+
+Hyperparameters Explored
+
 param_grid = {
     'criterion': ['gini', 'entropy'],
     'splitter': ['best', 'random'],
@@ -459,54 +519,54 @@ param_grid = {
     'min_samples_leaf': [1, 3, 5, 7],
     'max_features': ['sqrt', 'log2']
 }
-```
 
-### Cross-Validation
+Cross-Validation
 
 The project uses:
 
-```python
 GridSearchCV(
     ...,
     cv=3
 )
-```
 
-The parameter grid contains **512 parameter combinations**, resulting in:
+The parameter grid contains 512 parameter combinations, resulting in:
 
-```text
 512 parameter combinations
         ×
 3-fold Cross Validation
         ↓
 1536 Model Fits
-```
 
 The project demonstrates how GridSearchCV can systematically search different hyperparameter combinations and select the best estimator based on the chosen evaluation criterion.
 
----
+👥 K-NEAREST NEIGHBOUR
 
-# 👥 K-NEAREST NEIGHBOUR
+🔹 19 — K-NEAREST NEIGHBOUR — DIABETES CLASSIFICATION
 
-## 🔹 19 — K-NEAREST NEIGHBOUR — DIABETES CLASSIFICATION
+Implemented K-Nearest Neighbour (KNN) for diabetes classification.
 
-Implemented **K-Nearest Neighbour (KNN)** for diabetes classification.
+Concepts Covered
 
-### Concepts Covered
+KNeighborsClassifier
 
-* `KNeighborsClassifier`
-* Distance-Based Classification
-* `RobustScaler`
-* `Pipeline`
-* `GridSearchCV`
-* Cross-Validation
-* Hyperparameter Tuning
-* F1 Score
-* Classification Report
+Distance-Based Classification
 
-### Workflow
+RobustScaler
 
-```text
+Pipeline
+
+GridSearchCV
+
+Cross-Validation
+
+Hyperparameter Tuning
+
+F1 Score
+
+Classification Report
+
+Workflow
+
 Diabetes Dataset
         ↓
 Train-Test Split
@@ -522,38 +582,47 @@ GridSearchCV
 Cross-Validation
         ↓
 Classification Report
-```
 
-The project uses `GridSearchCV` to tune KNN parameters and evaluates the classification model using the **F1 Score** and classification report.
+The project uses GridSearchCV to tune KNN parameters and evaluates the classification model using the F1 Score and classification report.
 
----
+⚡ SUPPORT VECTOR MACHINE
 
-# ⚡ SUPPORT VECTOR MACHINE
+🔹 20 — SVM — BINARY CLASSIFICATION
 
-## 🔹 20 — SVM — BINARY CLASSIFICATION
+Implemented Support Vector Machine (SVM) using SVC for binary classification.
 
-Implemented **Support Vector Machine (SVM)** using `SVC` for binary classification.
+Concepts Covered
 
-### Concepts Covered
+SVC
 
-* `SVC`
-* Support Vector Machine
-* Binary Classification
-* Decision Boundary
-* Support Vectors
-* Kernel Functions
-* `C` Parameter
-* Polynomial Degree
-* One-Hot Encoding
-* `StandardScaler`
-* `ColumnTransformer`
-* `Pipeline`
-* `GridSearchCV`
-* Classification Report
+Support Vector Machine
 
-### SVM Workflow
+Binary Classification
 
-```text
+Decision Boundary
+
+Support Vectors
+
+Kernel Functions
+
+C Parameter
+
+Polynomial Degree
+
+One-Hot Encoding
+
+StandardScaler
+
+ColumnTransformer
+
+Pipeline
+
+GridSearchCV
+
+Classification Report
+
+SVM Workflow
+
 Loan Dataset
       ↓
 Data Preprocessing
@@ -571,56 +640,71 @@ SVC
 GridSearchCV
       ↓
 Model Evaluation
-```
 
-### Kernel Parameters Explored
+Kernel Parameters Explored
 
-```python
 {
     'model__C': [0.001, 0.01, 0.1, 1, 10, 100],
     'model__kernel': ['rbf', 'linear', 'sigmoid', 'poly'],
     'model__degree': [2, 3, 5]
 }
-```
 
-The project focuses on **binary classification using SVC** and hyperparameter tuning through GridSearchCV.
+The project focuses on binary classification using SVC and hyperparameter tuning through GridSearchCV.
 
----
+🧠 NAIVE BAYES
 
-# 🧠 NAIVE BAYES
+🔹 21 — NAIVE BAYES — MULTINOMIAL TEXT CLASSIFICATION
 
-## 🔹 21 — NAIVE BAYES — MULTINOMIAL TEXT CLASSIFICATION
+Implemented Naive Bayes for text classification using a spam email/message dataset.
 
-Implemented **Naive Bayes** for text classification using a spam email/message dataset.
+The Day 21 project specifically uses Multinomial Naive Bayes (MultinomialNB).
 
-The Day 21 project specifically uses **Multinomial Naive Bayes (`MultinomialNB`)**.
+Concepts Covered
 
-### Concepts Covered
+Naive Bayes
 
-* Naive Bayes
-* Bayes' Theorem
-* Bernoulli Naive Bayes
-* Gaussian Naive Bayes
-* Multinomial Naive Bayes
-* Text Classification
-* TF-IDF
-* `TfidfVectorizer`
-* `MultinomialNB`
-* `Pipeline`
-* Train-Test Split
-* Classification Report
+Bayes' Theorem
 
-### Naive Bayes Variants
+Bernoulli Naive Bayes
 
-| Variant                 | Common Use                             |
-| ----------------------- | -------------------------------------- |
-| Bernoulli Naive Bayes   | Binary / Boolean features              |
-| Gaussian Naive Bayes    | Continuous numerical features          |
-| Multinomial Naive Bayes | Count or frequency-based text features |
+Gaussian Naive Bayes
 
-### Text Classification Workflow
+Multinomial Naive Bayes
 
-```text
+Text Classification
+
+TF-IDF
+
+TfidfVectorizer
+
+MultinomialNB
+
+Pipeline
+
+Train-Test Split
+
+Classification Report
+
+Naive Bayes Variants
+
+Variant
+
+Common Use
+
+Bernoulli Naive Bayes
+
+Binary / Boolean features
+
+Gaussian Naive Bayes
+
+Continuous numerical features
+
+Multinomial Naive Bayes
+
+Count or frequency-based text features
+
+Text Classification Workflow
+
 Spam Dataset
       ↓
 Text Data
@@ -638,54 +722,56 @@ Pipeline
 Predictions
       ↓
 Classification Report
-```
 
-### Pipeline
+Pipeline
 
-```python
 main_pipeline = Pipeline([
     ('vectorizer', TfidfVectorizer()),
     ('model', MultinomialNB())
 ])
-```
 
-### Evaluation
+Evaluation
 
 The model is evaluated using:
 
-* Classification Report
-* Precision
-* Recall
-* F1-Score
+Classification Report
 
-> **Note:** The Day 21 notebook specifically executes **Multinomial Naive Bayes**. Bernoulli and Gaussian Naive Bayes are included as part of the Naive Bayes family being studied, but they are not executed in this Day 21 notebook.
+Precision
 
----
+Recall
 
+F1-Score
 
-# 🔤 VECTORIZATION
+Note: The Day 21 notebook specifically executes Multinomial Naive Bayes. Bernoulli and Gaussian Naive Bayes are included as part of the Naive Bayes family being studied, but they are not executed in this Day 21 notebook.
 
-## 🔹 22 — VECTORIZATION — COUNTVECTORIZER & TF-IDF VECTORIZER
+🔤 VECTORIZATION
 
-Implemented **Text Vectorization** techniques to convert text data into numerical features that Machine Learning models can process.
+🔹 22 — VECTORIZATION — COUNTVECTORIZER & TF-IDF VECTORIZER
+
+Implemented Text Vectorization techniques to convert text data into numerical features that Machine Learning models can process.
 
 The Day 22 project focuses on:
 
-* `CountVectorizer`
-* `TfidfVectorizer`
-* N-grams
-* Stop Words
-* Text Feature Extraction
-* Sparse Matrix Representation
-* Numerical Representation of Text
+CountVectorizer
 
-### 📊 CountVectorizer
+TfidfVectorizer
 
-`CountVectorizer` converts text documents into numerical features based on the occurrence of words or n-grams.
+N-grams
 
-### Implementation
+Stop Words
 
-```python
+Text Feature Extraction
+
+Sparse Matrix Representation
+
+Numerical Representation of Text
+
+📊 CountVectorizer
+
+CountVectorizer converts text documents into numerical features based on the occurrence of words or n-grams.
+
+Implementation
+
 vectorizer = CountVectorizer(
     stop_words='english',
     binary=True,
@@ -696,17 +782,15 @@ vectorizer = CountVectorizer(
 )
 
 vectors = vectorizer.fit_transform(xtrain['v2'])
-```
 
-### 📈 TF-IDF Vectorizer
+📈 TF-IDF Vectorizer
 
-TF-IDF stands for **Term Frequency — Inverse Document Frequency**.
+TF-IDF stands for Term Frequency — Inverse Document Frequency.
 
-`TfidfVectorizer` represents text numerically while assigning weights based on the importance of terms across documents.
+TfidfVectorizer represents text numerically while assigning weights based on the importance of terms across documents.
 
-### Implementation
+Implementation
 
-```python
 tfidf_vectorizer = TfidfVectorizer(
     stop_words='english',
     max_features=100,
@@ -714,11 +798,9 @@ tfidf_vectorizer = TfidfVectorizer(
 )
 
 tfidf_vectors = tfidf_vectorizer.fit_transform(xtrain['v2'])
-```
 
-### 🔄 Vectorization Workflow
+🔄 Vectorization Workflow
 
-```text
 Raw Text
    ↓
 Text Preprocessing
@@ -728,88 +810,119 @@ Vectorization
 Numerical Features
    ↓
 Machine Learning Model
-```
 
-### ⚖️ CountVectorizer vs TF-IDF
+⚖️ CountVectorizer vs TF-IDF
 
-| CountVectorizer | TF-IDF |
-|---|---|
-| Represents word/ngram counts | Represents weighted term importance |
-| Can use binary features | Produces weighted numerical values |
-| Simple frequency-based representation | Reduces the influence of very common terms |
-| Useful for basic text representation | Commonly used for text classification |
+CountVectorizer
 
-### 📂 Dataset
+TF-IDF
 
-The project uses a **spam message dataset**.
+Represents word/ngram counts
 
-* `v1` → Message label
-* `v2` → Message text
+Represents weighted term importance
 
-The `v2` text column is converted into numerical features using vectorization techniques.
+Can use binary features
 
-### 🛠️ Technologies Used
+Produces weighted numerical values
 
-* Python
-* Pandas
-* Scikit-learn
-* Jupyter Notebook
+Simple frequency-based representation
 
-### 🎯 Learning Outcome
+Reduces the influence of very common terms
+
+Useful for basic text representation
+
+Commonly used for text classification
+
+📂 Dataset
+
+The project uses a spam message dataset.
+
+v1 → Message label
+
+v2 → Message text
+
+The v2 text column is converted into numerical features using vectorization techniques.
+
+🛠️ Technologies Used
+
+Python
+
+Pandas
+
+Scikit-learn
+
+Jupyter Notebook
+
+🎯 Learning Outcome
 
 Through this project, I learned how to:
 
-* Convert text into numerical features
-* Use CountVectorizer
-* Use TF-IDF Vectorizer
-* Generate n-gram features
-* Remove stop words
-* Work with sparse matrices
-* Prepare text data for Machine Learning
+Convert text into numerical features
 
----
+Use CountVectorizer
 
-# 🎯 K-MEANS CLUSTERING
+Use TF-IDF Vectorizer
 
-## 🔹 23 — K-MEANS CLUSTERING — CUSTOMER SEGMENTATION
+Generate n-gram features
 
-Implemented **K-Means Clustering** as an unsupervised Machine Learning technique using the **Mall Customers dataset**.
+Remove stop words
+
+Work with sparse matrices
+
+Prepare text data for Machine Learning
+
+🎯 K-MEANS CLUSTERING
+
+🔹 23 — K-MEANS CLUSTERING — CUSTOMER SEGMENTATION
+
+Implemented K-Means Clustering as an unsupervised Machine Learning technique using the Mall Customers dataset.
 
 The Day 23 project focuses on:
 
-* Unsupervised Learning
-* K-Means Clustering
-* Customer Segmentation
-* Cluster Prediction
-* Inertia
-* Elbow Method
-* PCA
-* Cluster Visualization
-* K-Means Pipeline
+Unsupervised Learning
 
-### 📊 Dataset
+K-Means Clustering
 
-The project uses the **Mall Customers dataset** containing customer-related features such as:
+Customer Segmentation
 
-* `CustomerID`
-* `Gender`
-* `Age`
-* `Annual Income (k$)`
-* `Spending Score (1-100)`
+Cluster Prediction
 
-### 🔹 K-Means Clustering
+Inertia
+
+Elbow Method
+
+PCA
+
+Cluster Visualization
+
+K-Means Pipeline
+
+📊 Dataset
+
+The project uses the Mall Customers dataset containing customer-related features such as:
+
+CustomerID
+
+Gender
+
+Age
+
+Annual Income (k$)
+
+Spending Score (1-100)
+
+🔹 K-Means Clustering
 
 K-Means groups data points into clusters based on similarity.
 
-The notebook first demonstrates K-Means with `n_clusters=3`, then applies the **Elbow Method** to compare inertia values for different cluster counts.
+The notebook first demonstrates K-Means with n_clusters=3, then applies the Elbow Method to compare inertia values for different cluster counts.
 
-The notebook identifies **4 clusters** as the selected value for the mall customer scenario and then visualizes the resulting clusters.
+The notebook identifies 4 clusters as the selected value for the mall customer scenario and then visualizes the resulting clusters.
 
-### 📐 Elbow Method & Inertia
+📐 Elbow Method & Inertia
 
 The Elbow Method is used to help select an appropriate number of clusters.
 
-```text
 Different K Values
         ↓
    K-Means Models
@@ -821,13 +934,11 @@ Different K Values
  Select Elbow Point
         ↓
  Choose K
-```
 
-### 📉 PCA — Dimensionality Reduction
+📉 PCA — Dimensionality Reduction
 
-The project also uses **Principal Component Analysis (PCA)** to transform the feature space into fewer dimensions for analysis and visualization.
+The project also uses Principal Component Analysis (PCA) to transform the feature space into fewer dimensions for analysis and visualization.
 
-```text
 Customer Features
         ↓
        PCA
@@ -835,165 +946,462 @@ Customer Features
 Reduced Dimensions
         ↓
 Cluster Visualization
-```
 
-### 🔄 K-Means + PCA Pipeline
+🔄 K-Means + PCA Pipeline
 
-The notebook also demonstrates combining PCA and K-Means using a Scikit-learn `Pipeline`.
+The notebook also demonstrates combining PCA and K-Means using a Scikit-learn Pipeline.
 
-```python
 main_pipe = Pipeline(
     steps=[
         ('pca_', PCA(n_components=0.95)),
         ('model', KMeans(n_clusters=2, random_state=42))
     ]
 )
-```
 
-> **Note:** The notebook uses different cluster counts at different stages: `3` for the initial K-Means example, `4` after the Elbow Method, and `2` in the final PCA + K-Means pipeline.
+Note: The notebook uses different cluster counts at different stages: 3 for the initial K-Means example, 4 after the Elbow Method, and 2 in the final PCA + K-Means pipeline.
 
-### 🛠️ Technologies Used
+🛠️ Technologies Used
 
-* Python
-* Pandas
-* Scikit-learn
-* Matplotlib
-* Seaborn
-* Jupyter Notebook
+Python
 
-### 🎯 Learning Outcome
+Pandas
+
+Scikit-learn
+
+Matplotlib
+
+Seaborn
+
+Jupyter Notebook
+
+🎯 Learning Outcome
 
 Through this project, I learned how to:
 
-* Understand unsupervised learning
-* Apply K-Means clustering
-* Predict cluster assignments
-* Calculate and analyze inertia
-* Use the Elbow Method
-* Apply PCA for dimensionality reduction
-* Visualize clusters
-* Combine PCA and K-Means using a Pipeline
+Understand unsupervised learning
 
----
+Apply K-Means clustering
 
-# 🗺️ MY MACHINE LEARNING JOURNEY
+Predict cluster assignments
 
-| Day | Topic                                                 | Status          |
-| --- | ----------------------------------------------------- | --------------- |
-| 01  | 📈 Linear Regression                                  | ✅ Completed     |
-| 02  | 📊 Polynomial Regression                              | ✅ Completed     |
-| 03  | 📈 Multiple Linear Regression                         | ✅ Completed     |
-| 04  | ⚙️ StandardScaler                                     | ✅ Completed     |
-| 05  | ⚙️ MinMaxScaler                                       | ✅ Completed     |
-| 06  | 🔤 Label Encoding                                     | ✅ Completed     |
-| 07  | 🔢 One-Hot Encoding                                   | ✅ Completed     |
-| 08  | 🔢 Ordinal Encoding                                   | ✅ Completed     |
-| 09  | 🎯 Target Encoding                                    | ✅ Completed     |
-| 10  | 🔧 Column Transformer                                 | ✅ Completed     |
-| 11  | 🔧 Column Transformer — Multiple Transformers         | ✅ Completed     |
-| 12  | 🔄 Pipeline + ColumnTransformer + Logistic Regression | ✅ Completed     |
-| 13  | 🧹 Missing Value Imputation — SimpleImputer           | ✅ Completed     |
-| 14  | 🏦 Logistic Regression — Loan Approval Prediction     | ✅ Completed     |
-| 15  | 📊 Classification Metrics — Loan Data                 | ✅ Completed     |
-| 16  | 🏦 Loan Default Risk — Classification Metrics         | ✅ Completed     |
-| 17  | 🌳 Decision Tree — Classification & Regression        | ✅ Completed     |
-| 18  | 🎯 GridSearchCV — Hyperparameter Tuning               | ✅ Completed     |
-| 19  | 👥 K-Nearest Neighbour — Diabetes Classification      | ✅ Completed     |
-| 20  | ⚡ SVM — Binary Classification                         | ✅ Completed     |
-| 21  | 🧠 Naive Bayes — Multinomial Text Classification      | ⭐ **Completed** |
-| 22  | 🔤 Vectorization — CountVectorizer & TF-IDF Vectorizer | ⭐ **Completed** |
-| 23  | 🎯 K-Means Clustering — Customer Segmentation        | ⭐ **Completed** |
+Calculate and analyze inertia
 
----
+Use the Elbow Method
 
-# 🧠 KEY LEARNING AREAS
+Apply PCA for dimensionality reduction
+
+Visualize clusters
+
+Combine PCA and K-Means using a Pipeline
+
+⚖️ IMBALANCED DATASET
+
+🔹 24 — IMBALANCED DATASET HANDLING
+
+Explored techniques for handling imbalanced datasets in Machine Learning using a spam message dataset.
+
+The Day 24 project focuses on understanding majority and minority classes and exploring different approaches for addressing class imbalance.
+
+📊 Dataset
+
+The project uses a spam message dataset with the following class distribution:
+
+ham     4825
+spam     747
+
+The ham class is the majority class, while spam is the minority class.
+
+Concepts Covered
+
+Imbalanced Dataset
+
+Majority Class
+
+Minority Class
+
+Class Distribution
+
+Class Weight
+
+Undersampling
+
+RandomUnderSampler
+
+Oversampling
+
+SMOTE
+
+Imbalanced-learn
+
+Machine Learning Pipeline
+
+⚖️ Class Imbalance
+
+An imbalanced dataset occurs when one class contains significantly more samples than another class.
+
+Majority Class
+      ↓
+ham → 4825
+
+Minority Class
+      ↓
+spam → 747
+
+🔽 Random Under-Sampling
+
+The project explores RandomUnderSampler to reduce the number of samples from the majority class.
+
+from imblearn.under_sampling import RandomUnderSampler
+
+resample = RandomUnderSampler(
+    random_state=42,
+    sampling_strategy='auto'
+)
+
+🔼 SMOTE
+
+The project also explores SMOTE (Synthetic Minority Over-sampling Technique) for increasing the representation of the minority class.
+
+from imblearn.over_sampling import SMOTE
+
+⚙️ Class Weight
+
+The project also studies the use of:
+
+class_weight='balanced'
+
+which can give greater importance to the minority class during model training when supported by the estimator.
+
+🔄 Imbalanced Dataset Workflow
+
+Spam Dataset
+      ↓
+Check Class Distribution
+      ↓
+Identify Class Imbalance
+      ↓
+Choose Imbalance Handling Technique
+      ↓
+Undersampling / Oversampling / Class Weight
+      ↓
+Machine Learning Model
+      ↓
+Model Evaluation
+
+🛠️ Technologies Used
+
+Python
+
+Pandas
+
+Scikit-learn
+
+Imbalanced-learn
+
+Jupyter Notebook
+
+🎯 Learning Outcome
+
+Through this project, I learned how to identify class imbalance and explored different techniques for handling imbalanced datasets, including class weighting, RandomUnderSampler, and SMOTE.
+
+🗺️ MY MACHINE LEARNING JOURNEY
+
+Day
+
+Topic
+
+Status
+
+01
+
+📈 Linear Regression
+
+✅ Completed
+
+02
+
+📊 Polynomial Regression
+
+✅ Completed
+
+03
+
+📈 Multiple Linear Regression
+
+✅ Completed
+
+04
+
+⚙️ StandardScaler
+
+✅ Completed
+
+05
+
+⚙️ MinMaxScaler
+
+✅ Completed
+
+06
+
+🔤 Label Encoding
+
+✅ Completed
+
+07
+
+🔢 One-Hot Encoding
+
+✅ Completed
+
+08
+
+🔢 Ordinal Encoding
+
+✅ Completed
+
+09
+
+🎯 Target Encoding
+
+✅ Completed
+
+10
+
+🔧 Column Transformer
+
+✅ Completed
+
+11
+
+🔧 Column Transformer — Multiple Transformers
+
+✅ Completed
+
+12
+
+🔄 Pipeline + ColumnTransformer + Logistic Regression
+
+✅ Completed
+
+13
+
+🧹 Missing Value Imputation — SimpleImputer
+
+✅ Completed
+
+14
+
+🏦 Logistic Regression — Loan Approval Prediction
+
+✅ Completed
+
+15
+
+📊 Classification Metrics — Loan Data
+
+✅ Completed
+
+16
+
+🏦 Loan Default Risk — Classification Metrics
+
+✅ Completed
+
+17
+
+🌳 Decision Tree — Classification & Regression
+
+✅ Completed
+
+18
+
+🎯 GridSearchCV — Hyperparameter Tuning
+
+✅ Completed
+
+19
+
+👥 K-Nearest Neighbour — Diabetes Classification
+
+✅ Completed
+
+20
+
+⚡ SVM — Binary Classification
+
+✅ Completed
+
+21
+
+🧠 Naive Bayes — Multinomial Text Classification
+
+⭐ Completed
+
+22
+
+🔤 Vectorization — CountVectorizer & TF-IDF Vectorizer
+
+⭐ Completed
+
+23
+
+🎯 K-Means Clustering — Customer Segmentation
+
+⭐ Completed
+
+24
+
+⚖️ Imbalanced Dataset Handling
+
+⭐ Completed
+
+🧠 KEY LEARNING AREAS
 
 Through these projects, I have gained hands-on experience with:
 
-## 📌 Regression
+📌 Regression
 
-* Linear Regression
-* Polynomial Regression
-* Multiple Linear Regression
-* Regression Model Evaluation
+Linear Regression
 
-## 📌 Classification
+Polynomial Regression
 
-* Logistic Regression
-* Decision Tree Classification
-* K-Nearest Neighbour
-* Support Vector Machine
-* Naive Bayes
-* Binary Classification
-* Text Classification
-* Classification Model Evaluation
+Multiple Linear Regression
 
-## 📌 Data Preprocessing
+Regression Model Evaluation
 
-* Standardization
-* Normalization
-* Label Encoding
-* One-Hot Encoding
-* Ordinal Encoding
-* Target Encoding
-* Missing Value Imputation
+📌 Classification
 
-## 📌 Feature Transformation
+Logistic Regression
 
-* ColumnTransformer
-* Multiple Transformers
-* Pipelines
-* Text Vectorization
-* CountVectorizer
-* TF-IDF Vectorizer
-* N-grams
-* Stop Words
-* Text Feature Extraction
-* TF-IDF Vectorization
+Decision Tree Classification
 
-## 📌 Unsupervised Learning
+K-Nearest Neighbour
 
-* K-Means Clustering
-* Cluster Analysis
-* Inertia
-* Elbow Method
-* PCA
-* Cluster Visualization
-* K-Means Pipeline
+Support Vector Machine
 
-## 📌 Model Selection & Optimization
+Naive Bayes
 
-* GridSearchCV
-* Hyperparameter Tuning
-* Cross-Validation
-* Parameter Search
-* Best Estimator Selection
+Binary Classification
 
-## 📌 Model Evaluation
+Text Classification
 
-### Regression Metrics
+Classification Model Evaluation
 
-* R² Score
-* MAE
-* MSE
-* RMSE
+📌 Data Preprocessing
 
-### Classification Metrics
+Standardization
 
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
-* Classification Report
+Normalization
 
----
+Label Encoding
 
-# 🔄 MACHINE LEARNING WORKFLOW
+One-Hot Encoding
+
+Ordinal Encoding
+
+Target Encoding
+
+Missing Value Imputation
+
+📌 Feature Transformation
+
+ColumnTransformer
+
+Multiple Transformers
+
+Pipelines
+
+Text Vectorization
+
+CountVectorizer
+
+TF-IDF Vectorizer
+
+N-grams
+
+Stop Words
+
+Text Feature Extraction
+
+TF-IDF Vectorization
+
+📌 Unsupervised Learning
+
+K-Means Clustering
+
+Cluster Analysis
+
+Inertia
+
+Elbow Method
+
+PCA
+
+Cluster Visualization
+
+K-Means Pipeline
+
+📌 Imbalanced Dataset Handling
+
+Imbalanced Dataset
+
+Majority and Minority Classes
+
+Class Weight
+
+Undersampling
+
+RandomUnderSampler
+
+Oversampling
+
+SMOTE
+
+Imbalanced-learn
+
+📌 Model Selection & Optimization
+
+GridSearchCV
+
+Hyperparameter Tuning
+
+Cross-Validation
+
+Parameter Search
+
+Best Estimator Selection
+
+📌 Model Evaluation
+
+Regression Metrics
+
+R² Score
+
+MAE
+
+MSE
+
+RMSE
+
+Classification Metrics
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-Score
+
+Confusion Matrix
+
+Classification Report
+
+🔄 MACHINE LEARNING WORKFLOW
 
 My projects follow a structured Machine Learning workflow:
 
-```text
              📂 Dataset
                  ↓
         🔍 Understand Data
@@ -1017,13 +1425,9 @@ My projects follow a structured Machine Learning workflow:
           📊 Model Evaluation
                  ↓
           🔍 Result Analysis
-```
 
----
+📈 LEARNING PROGRESS
 
-# 📈 LEARNING PROGRESS
-
-```text
 Machine Learning Fundamentals
             ↓
        Regression
@@ -1057,129 +1461,179 @@ Machine Learning Fundamentals
  Multinomial Naive Bayes
             ↓
      🚀 Continuing...
-```
 
----
+🎯 CURRENT PROGRESS
 
-# 🎯 CURRENT PROGRESS
-
-## ⭐ DAY 23 COMPLETED
+⭐ DAY 24 COMPLETED
 
 I have progressed from basic regression algorithms to:
 
-* Regression Algorithms
-* Data Preprocessing
-* Feature Scaling
-* Categorical Encoding
-* Feature Transformation
-* ColumnTransformer
-* Pipelines
-* Logistic Regression
-* Classification
-* Classification Metrics
-* Decision Tree Classification
-* Decision Tree Regression Workflows
-* GridSearchCV
-* Hyperparameter Tuning
-* Cross-Validation
-* K-Nearest Neighbour
-* Support Vector Machine
-* Binary Classification
-* Naive Bayes
-* Multinomial Naive Bayes
-* Text Classification
-* Text Vectorization
-* CountVectorizer
-* TF-IDF Vectorizer
-* N-grams
-* Stop Words
-* Text Feature Extraction
-* Unsupervised Learning
-* K-Means Clustering
-* Elbow Method
-* Inertia
-* PCA
-* Cluster Visualization
-* K-Means Pipeline
+Regression Algorithms
 
-The goal is to continue building a strong foundation through **hands-on implementation rather than only theoretical learning**.
+Data Preprocessing
 
----
+Feature Scaling
 
-# 🚀 REPOSITORY GOALS
+Categorical Encoding
+
+Feature Transformation
+
+ColumnTransformer
+
+Pipelines
+
+Logistic Regression
+
+Classification
+
+Classification Metrics
+
+Decision Tree Classification
+
+Decision Tree Regression Workflows
+
+GridSearchCV
+
+Hyperparameter Tuning
+
+Cross-Validation
+
+K-Nearest Neighbour
+
+Support Vector Machine
+
+Binary Classification
+
+Naive Bayes
+
+Multinomial Naive Bayes
+
+Text Classification
+
+Text Vectorization
+
+CountVectorizer
+
+TF-IDF Vectorizer
+
+N-grams
+
+Stop Words
+
+Text Feature Extraction
+
+Unsupervised Learning
+
+K-Means Clustering
+
+Elbow Method
+
+Inertia
+
+PCA
+
+Cluster Visualization
+
+K-Means Pipeline
+
+Imbalanced Dataset Handling
+
+Majority and Minority Classes
+
+Class Weight
+
+RandomUnderSampler
+
+SMOTE
+
+Oversampling and Undersampling
+
+The goal is to continue building a strong foundation through hands-on implementation rather than only theoretical learning.
+
+🚀 REPOSITORY GOALS
 
 The main goals of this repository are:
 
-* Build a strong Machine Learning foundation
-* Implement concepts using Python
-* Practice data preprocessing
-* Understand feature engineering
-* Understand model evaluation
-* Learn hyperparameter tuning
-* Practice cross-validation
-* Work with practical datasets
-* Develop Machine Learning problem-solving skills
-* Maintain a consistent learning record
-* Build a professional Machine Learning portfolio
+Build a strong Machine Learning foundation
 
----
+Implement concepts using Python
 
-# 📌 WHY THIS REPOSITORY?
+Practice data preprocessing
 
-This repository represents my **continuous Machine Learning learning journey**.
+Understand feature engineering
+
+Understand model evaluation
+
+Learn hyperparameter tuning
+
+Practice cross-validation
+
+Work with practical datasets
+
+Develop Machine Learning problem-solving skills
+
+Maintain a consistent learning record
+
+Build a professional Machine Learning portfolio
+
+📌 WHY THIS REPOSITORY?
+
+This repository represents my continuous Machine Learning learning journey.
 
 Instead of learning algorithms only theoretically, I am implementing each concept through practical notebooks and datasets.
 
 My learning philosophy:
 
-> **Learn → Implement → Evaluate → Improve → Repeat**
+Learn → Implement → Evaluate → Improve → Repeat
 
----
-
-# 🔮 NEXT STEPS
+🔮 NEXT STEPS
 
 I will continue expanding this repository with new:
 
-* Machine Learning Algorithms
-* Data Preprocessing Techniques
-* Feature Engineering Methods
-* Model Evaluation Techniques
-* Classification Algorithms
-* Regression Algorithms
-* Ensemble Learning
-* Clustering
-* Dimensionality Reduction
-* Practical Machine Learning Projects
+Machine Learning Algorithms
 
-The goal is to gradually move from **Machine Learning fundamentals to more advanced and real-world applications**.
+Data Preprocessing Techniques
 
----
+Feature Engineering Methods
 
-# 👩‍💻 ABOUT ME
+Model Evaluation Techniques
 
-I am a **Computer Science & Engineering graduate** building my skills in:
+Classification Algorithms
 
-* Python
-* Machine Learning
-* Data Science
-* Artificial Intelligence
+Regression Algorithms
 
-I am developing my technical skills through **continuous hands-on learning, practical implementation, and project-based learning**.
+Ensemble Learning
 
-This repository represents my ongoing journey toward becoming a strong **Machine Learning / Python professional**.
+Clustering
 
----
+Dimensionality Reduction
 
-# ⭐ SUPPORT
+Practical Machine Learning Projects
 
-If you find this repository useful or interesting, feel free to ⭐ **Star** the repository!
+The goal is to gradually move from Machine Learning fundamentals to more advanced and real-world applications.
 
----
+👩‍💻 ABOUT ME
 
-# 🚀 LEARNING. BUILDING. IMPROVING.
+I am a Computer Science & Engineering graduate building my skills in:
 
-### **Day 23 — K-Means Clustering completed.**
+Python
 
-### **The journey continues... 🤖**
+Machine Learning
 
-````
+Data Science
+
+Artificial Intelligence
+
+I am developing my technical skills through continuous hands-on learning, practical implementation, and project-based learning.
+
+This repository represents my ongoing journey toward becoming a strong Machine Learning / Python professional.
+
+⭐ SUPPORT
+
+If you find this repository useful or interesting, feel free to ⭐ Star the repository!
+
+🚀 LEARNING. BUILDING. IMPROVING.
+
+Day 24 — Imbalanced Dataset Handling completed.
+
+The journey continues... 🤖
