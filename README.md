@@ -109,6 +109,11 @@ Machine-Learning
 │   ├── spam.csv
 │   └── README.md
 │
+├── K-Means-Clustering
+│   ├── KMeans_Clustering.ipynb
+│   ├── Mall_Customers.csv
+│   └── README.md
+│
 └── README.md
 ````
 
@@ -764,6 +769,113 @@ Through this project, I learned how to:
 
 ---
 
+# 🎯 K-MEANS CLUSTERING
+
+## 🔹 23 — K-MEANS CLUSTERING — CUSTOMER SEGMENTATION
+
+Implemented **K-Means Clustering** as an unsupervised Machine Learning technique using the **Mall Customers dataset**.
+
+The Day 23 project focuses on:
+
+* Unsupervised Learning
+* K-Means Clustering
+* Customer Segmentation
+* Cluster Prediction
+* Inertia
+* Elbow Method
+* PCA
+* Cluster Visualization
+* K-Means Pipeline
+
+### 📊 Dataset
+
+The project uses the **Mall Customers dataset** containing customer-related features such as:
+
+* `CustomerID`
+* `Gender`
+* `Age`
+* `Annual Income (k$)`
+* `Spending Score (1-100)`
+
+### 🔹 K-Means Clustering
+
+K-Means groups data points into clusters based on similarity.
+
+The notebook first demonstrates K-Means with `n_clusters=3`, then applies the **Elbow Method** to compare inertia values for different cluster counts.
+
+The notebook identifies **4 clusters** as the selected value for the mall customer scenario and then visualizes the resulting clusters.
+
+### 📐 Elbow Method & Inertia
+
+The Elbow Method is used to help select an appropriate number of clusters.
+
+```text
+Different K Values
+        ↓
+   K-Means Models
+        ↓
+ Calculate Inertia
+        ↓
+ Plot Inertia
+        ↓
+ Select Elbow Point
+        ↓
+ Choose K
+```
+
+### 📉 PCA — Dimensionality Reduction
+
+The project also uses **Principal Component Analysis (PCA)** to transform the feature space into fewer dimensions for analysis and visualization.
+
+```text
+Customer Features
+        ↓
+       PCA
+        ↓
+Reduced Dimensions
+        ↓
+Cluster Visualization
+```
+
+### 🔄 K-Means + PCA Pipeline
+
+The notebook also demonstrates combining PCA and K-Means using a Scikit-learn `Pipeline`.
+
+```python
+main_pipe = Pipeline(
+    steps=[
+        ('pca_', PCA(n_components=0.95)),
+        ('model', KMeans(n_clusters=2, random_state=42))
+    ]
+)
+```
+
+> **Note:** The notebook uses different cluster counts at different stages: `3` for the initial K-Means example, `4` after the Elbow Method, and `2` in the final PCA + K-Means pipeline.
+
+### 🛠️ Technologies Used
+
+* Python
+* Pandas
+* Scikit-learn
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
+
+### 🎯 Learning Outcome
+
+Through this project, I learned how to:
+
+* Understand unsupervised learning
+* Apply K-Means clustering
+* Predict cluster assignments
+* Calculate and analyze inertia
+* Use the Elbow Method
+* Apply PCA for dimensionality reduction
+* Visualize clusters
+* Combine PCA and K-Means using a Pipeline
+
+---
+
 # 🗺️ MY MACHINE LEARNING JOURNEY
 
 | Day | Topic                                                 | Status          |
@@ -790,6 +902,7 @@ Through this project, I learned how to:
 | 20  | ⚡ SVM — Binary Classification                         | ✅ Completed     |
 | 21  | 🧠 Naive Bayes — Multinomial Text Classification      | ⭐ **Completed** |
 | 22  | 🔤 Vectorization — CountVectorizer & TF-IDF Vectorizer | ⭐ **Completed** |
+| 23  | 🎯 K-Means Clustering — Customer Segmentation        | ⭐ **Completed** |
 
 ---
 
@@ -837,6 +950,16 @@ Through these projects, I have gained hands-on experience with:
 * Stop Words
 * Text Feature Extraction
 * TF-IDF Vectorization
+
+## 📌 Unsupervised Learning
+
+* K-Means Clustering
+* Cluster Analysis
+* Inertia
+* Elbow Method
+* PCA
+* Cluster Visualization
+* K-Means Pipeline
 
 ## 📌 Model Selection & Optimization
 
@@ -940,7 +1063,7 @@ Machine Learning Fundamentals
 
 # 🎯 CURRENT PROGRESS
 
-## ⭐ DAY 22 COMPLETED
+## ⭐ DAY 23 COMPLETED
 
 I have progressed from basic regression algorithms to:
 
@@ -971,6 +1094,13 @@ I have progressed from basic regression algorithms to:
 * N-grams
 * Stop Words
 * Text Feature Extraction
+* Unsupervised Learning
+* K-Means Clustering
+* Elbow Method
+* Inertia
+* PCA
+* Cluster Visualization
+* K-Means Pipeline
 
 The goal is to continue building a strong foundation through **hands-on implementation rather than only theoretical learning**.
 
@@ -1048,7 +1178,7 @@ If you find this repository useful or interesting, feel free to ⭐ **Star** the
 
 # 🚀 LEARNING. BUILDING. IMPROVING.
 
-### **Day 22 — Vectorization with CountVectorizer & TF-IDF Vectorizer completed.**
+### **Day 23 — K-Means Clustering completed.**
 
 ### **The journey continues... 🤖**
 
