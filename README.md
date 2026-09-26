@@ -137,6 +137,10 @@ Machine-Learning
 │   ├── spam.csv
 │   └── README.md
 │
+├── Isolation-Forest
+│   ├── Isolation_Forest_Anomaly_Detection.ipynb
+│   └── README.md
+│
 └── README.md
 
 📚 MACHINE LEARNING PROJECTS
@@ -1104,6 +1108,132 @@ Jupyter Notebook
 
 Through this project, I learned how to identify class imbalance and explored different techniques for handling imbalanced datasets, including class weighting, RandomUnderSampler, and SMOTE.
 
+🌲 ISOLATION FOREST
+
+🔹 25 — ISOLATION FOREST — ANOMALY DETECTION
+
+Implemented Isolation Forest for anomaly detection using an unsupervised Machine Learning approach.
+
+The Day 25 project focuses on identifying unusual observations using Isolation Forest and separating predicted anomalies from normal observations.
+
+🌲 Isolation Forest
+
+Isolation Forest is an unsupervised Machine Learning algorithm designed for anomaly detection.
+
+The main idea is that anomalies are easier to isolate than normal observations.
+
+The notebook uses:
+
+```python
+from sklearn.ensemble import IsolationForest
+```
+
+🔍 Anomaly Prediction
+
+The model generates predictions using:
+
+```python
+result = model.fit_predict(df)
+```
+
+The prediction values are interpreted as:
+
+```text
+-1 → Anomaly
+ 1 → Normal
+```
+
+The notebook separates the observations into anomaly and normal groups based on these predictions.
+
+⚙️ Model Configuration
+
+The notebook uses the following Isolation Forest configuration:
+
+```python
+IsolationForest(
+    n_estimators=100,
+    max_samples=0.8,
+    max_features=1.0,
+    bootstrap=True,
+    n_jobs=1,
+    verbose=5,
+    random_state=42,
+    contamination=0.05
+)
+```
+
+📌 Key Parameters
+
+- `n_estimators` — Number of trees
+- `max_samples` — Number/fraction of samples used for each tree
+- `max_features` — Number/fraction of features used
+- `bootstrap` — Whether bootstrap samples are used
+- `random_state` — Reproducibility
+- `contamination` — Expected proportion of anomalies
+
+⚖️ Contamination
+
+The notebook uses:
+
+```python
+contamination=0.05
+```
+
+This represents an expected anomaly proportion of approximately 5%.
+
+🔄 Isolation Forest Workflow
+
+```text
+Dataset
+   ↓
+Load Data
+   ↓
+Explore Data
+   ↓
+Apply Isolation Forest
+   ↓
+Fit Model
+   ↓
+Predict Anomalies
+   ↓
+-1 → Anomaly
+ 1 → Normal
+   ↓
+Separate Anomalies and Normal Data
+```
+
+🧠 Concepts Covered
+
+- Unsupervised Learning
+- Anomaly Detection
+- Isolation Forest
+- Outlier Detection
+- Contamination
+- Ensemble Learning
+- Anomaly Prediction
+- `fit_predict()`
+
+🛠️ Technologies Used
+
+- Python
+- Pandas
+- Scikit-learn
+- Jupyter Notebook
+
+📌 Dataset Note
+
+The notebook was executed using a Credit Card Fraud Detection dataset. The dataset file is not included in this repository.
+
+The notebook expects the dataset to be available locally as:
+
+```text
+creditcard.csv
+```
+
+🎯 Learning Outcome
+
+Through this project, I learned how Isolation Forest can be used for anomaly detection and how model predictions can be used to separate anomalous observations from normal observations.
+
 🗺️ MY MACHINE LEARNING JOURNEY
 
 Day
@@ -1256,6 +1386,12 @@ Status
 
 ⭐ Completed
 
+25
+
+🌲 Isolation Forest — Anomaly Detection
+
+⭐ Completed
+
 🧠 KEY LEARNING AREAS
 
 Through these projects, I have gained hands-on experience with:
@@ -1359,6 +1495,20 @@ Oversampling
 SMOTE
 
 Imbalanced-learn
+
+📌 Anomaly Detection
+
+Isolation Forest
+
+Anomaly Detection
+
+Outlier Detection
+
+Contamination
+
+Unsupervised Learning
+
+Ensemble Learning
 
 📌 Model Selection & Optimization
 
@@ -1464,7 +1614,7 @@ Machine Learning Fundamentals
 
 🎯 CURRENT PROGRESS
 
-⭐ DAY 24 COMPLETED
+⭐ DAY 25 COMPLETED
 
 I have progressed from basic regression algorithms to:
 
@@ -1547,6 +1697,16 @@ RandomUnderSampler
 SMOTE
 
 Oversampling and Undersampling
+
+Isolation Forest
+
+Anomaly Detection
+
+Outlier Detection
+
+Contamination
+
+Unsupervised Learning
 
 The goal is to continue building a strong foundation through hands-on implementation rather than only theoretical learning.
 
@@ -1634,6 +1794,6 @@ If you find this repository useful or interesting, feel free to ⭐ Star the rep
 
 🚀 LEARNING. BUILDING. IMPROVING.
 
-Day 24 — Imbalanced Dataset Handling completed.
+Day 25 — Isolation Forest — Anomaly Detection completed.
 
 The journey continues... 🤖
